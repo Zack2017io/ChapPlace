@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div data-mesh-id="gridContainer" data-testid="mesh-container-content">
+      <div id="headerEl" data-testid="richTextElement">
+        <p class="section--subtitle">
+          <span class="header--subtitle">
+            <a href="#" target="_self" class="logo-name">ChampPlace.</a>
+          </span>
+        </p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="search-container" aria-label="Search interface">
+                <form class="search-form" role="search" action="#">
+                    <input name="q" 
+                           type="search" 
+                           placeholder="Search..." 
+                           aria-label="Search..."
+                           class="search-input"
+                           id="search-input"
+                           maxlength="100"
+                           autocomplete="off">
+                           
+                    <button class="search-button" type="submit" aria-label="Search">
+                      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="5 5 14 14" aria-hidden="true">
+                        <path fill="currentColor" d="m15.683 14.6 3.265 3.265a.2.2 0 0 1 0 .282l-.8.801a.2.2 0 0 1-.283 0l-3.266-3.265a5.961 5.961 0 1 1 1.084-1.084zm-4.727 1.233a4.877 4.877 0 1 0 0-9.754 4.877 4.877 0 0 0 0 9.754z"></path>
+                      </svg>
+                    </button>
+                  </form>           
+              </div>
+              <div class="search-list" aria-hidden="true">
+                <ul class="search-suggestions" role="listbox" aria-label="Search results">
+                    <h3 class="suggestion-category" role="option">
+                      <span>Trending Products</span>
+                    </h3>
+                    
+                    <span class="suggestion-item" role="option" data-testid="search-suggestion-item">
+                      <article class="product-card" tabindex="0">
+                        <img class="product-image" 
+                             alt="I'm a product"
+                             src="https://static.wixstatic.com/media/c837a6_49c02cf9bcda49e7a194e447a886dcac~mv2.jpg"
+                             loading="lazy"
+                             width="73"
+                             height="55"
+                             object-fit="contain" 
+                             object-position="center center">
+                             
+                        <div class="product-info">
+                          <h3 class="product-title">I'm a product</h3>
+                          <p class="product-description">
+                            Product description with details about sizing, materials, care instructions.
+                          </p>
+                        </div>
+                      </article>
+                    </span>
+                    
+                    <!-- Repeat similar structure for other products -->
+                    <span class="suggestion-item" role="option" data-testid="search-suggestion-item">
+                        <article class="product-card" tabindex="0">
+                          <img class="product-image" 
+                               alt="I'm a product"
+                               src="https://static.wixstatic.com/media/c837a6_6068369882eb4a84baafb7309c639c13~mv2.jpg/v1/fill/w_63,h_83,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/I'm%20a%20product.jpg"
+                               loading="lazy"
+                               width="73"
+                               height="55"
+                               object-fit="contain" 
+                               object-position="center center">
+                               
+                          <div class="product-info">
+                            <h3 class="product-title">I'm a product</h3>
+                            <p class="product-description">
+                              Product description with details about sizing, materials, care instructions.
+                            </p>
+                          </div>
+                        </article>
+                      </span>
+
+                      <span class="suggestion-item" role="option" data-testid="search-suggestion-item">
+                        <article class="product-card" tabindex="0">
+                          <img class="product-image" 
+                               alt="I'm a product"
+                               src="https://static.wixstatic.com/media/84770f_86ce5a8d3f8a45669f3ffbc87144bf42~mv2.jpg/v1/fill/w_63,h_83,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/I'm%20a%20product.jpg"
+                               loading="lazy"
+                               width="73"
+                               height="55"
+                               object-fit="contain" 
+                               object-position="center center">
+                               
+                          <div class="product-info">
+                            <h3 class="product-title">I'm a product</h3>
+                            <p class="product-description">
+                              Product description with details about sizing, materials, care instructions.
+                            </p>
+                          </div>
+                        </article>
+                      </span>
+
+                      <span class="suggestion-item" role="option" data-testid="search-suggestion-item">
+                        <article class="product-card" tabindex="0">
+                          <img class="product-image" 
+                               alt="I'm a product"
+                               src="https://static.wixstatic.com/media/c837a6_d0c7b272c3404b03a77d639ac4bbf7c4~mv2.jpg/v1/fill/w_63,h_83,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/I'm%20a%20product.jpg"
+                               loading="lazy"
+                               width="73"
+                               height="55"
+                               object-fit="contain" 
+                               object-position="center center">
+                               
+                          <div class="product-info">
+                            <h3 class="product-title">I'm a product</h3>
+                            <p class="product-description">
+                              Product description with details about sizing, materials, care instructions.
+                            </p>
+                          </div>
+                        </article>
+                      </span>
+
+                     
+                  </ul>
+                
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-cart-container">
+        <button class="auth-button" aria-label="Log in">
+          <svg class="user-icon" viewBox="0 0 50 50" aria-hidden="true">
+            <path d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0"/>
+          </svg>
+          <span class="auth-label">Log In</span>
+        </button>
+      
+        <a class="cart-icon" href="#" aria-label="Cart items: 0">
+          <svg viewBox="0 0 164.9 196.4">
+            <path d="M81.9 11.5c-18.8 0-34.1 16-34.1 35.7v18.1h7.8V47.2c0-15.4 11.8-27.9 26.4-27.9 14.5 0 26.4 12.5 26.4 27.9v18.1h6.6V64h1.1V47.2c-.1-19.7-15.4-35.7-34.2-35.7z"/>
+            <path d="M156.9 70.5v118H8v-118h148.9m8-8H0v134h164.9v-134z"/>
+            <text x="84" y="131" class="cart-count">0</text>
+          </svg>
+        </a>
+      </div>
+  </header>
+
+  <!-- Hero Section -->
+
+  <section class="hero">
+    <section class="image-columns">
+        <div class="image-column">
+          <img class="column-image" 
+               src="https://static.wixstatic.com/media/c837a6_ca11fb1cb3494f29baeb7d65e4de631b~mv2.jpg" 
+               alt="Decorative content"
+               loading="lazy"
+               style="object-fit: cover; object-position: center"
+               width="510"
+               height="795">
+        </div>
+      
+        <div class="image-column">
+          <img class="column-image" 
+               src="https://static.wixstatic.com/media/c837a6_d10ed1caf1ff41b0ba962e2ee7b4dedf~mv2.jpg" 
+               alt="Decorative content"
+               loading="lazy"
+               style="object-fit: cover; object-position: center"
+               width="510"
+               height="795">
+        </div>
+      </section>
+    <h1>YOUR SOURCE FOR ALL-STAR MERCH</h1>
+    <p>Countless goods that keeps the memory alive</p>
+    <a href="#shop" class="cta-button">Shop Now</a>
+    <section class="promo-section">
+        <div class="promo-banner">
+          <img class="banner-image" 
+               src="https://static.wixstatic.com/media/84770f_87d1dd2e674d436aaf566c56129371cf~mv2.jpg" 
+               alt="Seasonal promotion background"
+               loading="lazy"
+               style="object-fit: cover; object-position: center bottom"
+               width="980"
+               height="1051">
+      
+          <div class="promo-content">
+            <h2 class="promo-heading">UP TO 15% OFF</h2>
+            <p class="promo-subtitle">Explore this season's essentials</p>
+            <a href="https://www.wix.com/demone2/champplace/category/sale" 
+               class="cta-button"
+               aria-label="Shop seasonal sale">
+              BUY NOW
+            </a>
+            
+            <div class="branding">
+              <img src="https://static.wixstatic.com/media/c837a6_cc115a0a4aa4418895386b4d42b0ac23~mv2.png" 
+                   alt="Brand logo"
+                   width="224"
+                   height="189"
+                   loading="lazy">
+            </div>
+          </div>
+        </div>
+      
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-header">
+              <h3 class="feature-title">WHAT WE OFFER</h3>
+              <ul class="rating-stars" aria-hidden="true">
+                <li>★</li><li>★</li><li>★</li><li>★</li><li>★</li>
+              </ul>
+            </div>
+            <ul class="benefits-list">
+              <li class="benefit-item">
+                <span class="benefit-text">Free shipping over $50</span>
+              </li>
+              <li class="benefit-item">
+                <span class="benefit-text">24/7 availability</span>
+              </li>
+              <li class="benefit-item">
+                <span class="benefit-text">Best prices guaranteed</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+  </section>
+
+  <!--Product show case-->
+  <section class="product-gallery" aria-label="Best selling products">
+    <h2 class="gallery-heading">BEST <br> SELLERS</h2>
+  
+    <div class="products-grid">
+      <article class="product-card best-seller" aria-labelledby="product-21-title">
+        <div class="image-container">
+          <img src="https://static.wixstatic.com/media/84770f_86ce5a8d3f8a45669f3ffbc87144bf42~mv2.jpg"
+               alt="Modern chair with leather upholstery"
+               class="product-image"
+               loading="lazy"
+               width="210"
+               height="210">
+          
+          <div class="best-seller-badge" aria-hidden="true">Best Seller</div>
+          
+          <button class="quick-view" 
+                  aria-label="Quick view: I'm a product"
+                  onclick="showQuickView('product-21')">
+            Quick View
+          </button>
+        </div>
+  
+        <div class="product-info">
+          <h3 id="product-21-title" class="product-title">I'm a product</h3>
+          <p class="product-price">$120.00</p>
+        </div>
+      </article>
+  
+      <!-- Repeat for other best sellers -->
+    </div>
+  </section>
+
+  <section id="comp-lt8qspgk1" tabindex="-1" class="Oqnisf comp-lt8qspgk1 wixui-section" data-block-level-container="ClassicSection">
+    <div id="bgLayers_comp-lt8qspgk1" data-hook="bgLayers" data-motion-part="BG_LAYER comp-lt8qspgk1" class="MW5IWV">
+      <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+      <div id="bgMedia_comp-lt8qspgk1" data-motion-part="BG_MEDIA comp-lt8qspgk1" class="VgO9Yg"></div>
+    </div>
+    <div data-mesh-id="comp-lt8qspgk1inlineContent" data-testid="inline-content" class="">
+      <div data-mesh-id="comp-lt8qspgk1inlineContent-gridContainer" data-testid="mesh-container-content">
+        <section id="comp-l7no73pw" class="comp-l7no73pw CohWsy wixui-column-strip">
+          <div id="bgLayers_comp-l7no73pw" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l7no73pw" class="if7Vw2">
+            <div data-testid="colorUnderlay" class="tcElKx i1tH8h"></div>
+            <div id="bgMedia_comp-l7no73pw" data-motion-part="BG_MEDIA comp-l7no73pw" class="wG8dni"></div>
+          </div>
+          <div data-testid="columns" class="V5AUxf">
+            <div id="comp-l7no73qy2" class="comp-l7no73qy2 YzqVVZ wixui-column-strip__column">
+              <div id="bgLayers_comp-l7no73qy2" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l7no73qy2" class="MW5IWV">
+                <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+                <div id="bgMedia_comp-l7no73qy2" data-motion-part="BG_MEDIA comp-l7no73qy2" class="VgO9Yg"></div>
+              </div>
+              <div data-mesh-id="comp-l7no73qy2inlineContent" data-testid="inline-content" class="">
+                <div data-mesh-id="comp-l7no73qy2inlineContent-gridContainer" data-testid="mesh-container-content">
+                  <div id="comp-l7ohhuf1" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l7ohhuf1 wixui-rich-text" data-testid="richTextElement" data-motion-enter="done">
+                    <h2 class="font_2 wixui-rich-text__text" style="line-height:0.9em; text-align:right; font-size:90px;"><span class="color_19 wixui-rich-text__text"><span style="letter-spacing:0em;" class="wixui-rich-text__text">BEST SELLERS</span></span></h2>
+                  </div>
+                  <div id="comp-m3330nvp" class="TWFxr5 ">
+                    <div class="comp-m3330nvp">
+                      <div data-hook="tpa-components-provider" style="--wix-color-29: var(--wix-color-3); --wix-color-37: var(--wix-color-5); --wix-color-38: var(--wix-color-8); --wix-color-39: var(--wix-color-8); --wix-color-40: var(--wix-color-1); --wix-color-41: var(--wix-color-8); --wix-color-42: var(--wix-color-8); --wix-color-43: var(--wix-color-1); --wix-color-44: var(--wix-color-3); --wix-color-45: var(--wix-color-3); --wix-color-46: var(--wix-color-1); --wix-color-47: var(--wix-color-1); --wix-color-48: var(--wix-color-8); --wix-color-49: var(--wix-color-8); --wix-color-50: var(--wix-color-1); --wix-color-51: var(--wix-color-8); --wix-color-52: var(--wix-color-8); --wix-color-53: var(--wix-color-1); --wix-color-54: var(--wix-color-3); --wix-color-55: var(--wix-color-3);">
+                        <div data-hook="tpa-components-provider" style="--wix-color-29: var(--wix-color-3); --wix-color-37: var(--wix-color-5); --wix-color-38: var(--wix-color-8); --wix-color-39: var(--wix-color-8); --wix-color-40: var(--wix-color-1); --wix-color-41: var(--wix-color-8); --wix-color-42: var(--wix-color-8); --wix-color-43: var(--wix-color-1); --wix-color-44: var(--wix-color-3); --wix-color-45: var(--wix-color-3); --wix-color-46: var(--wix-color-1); --wix-color-47: var(--wix-color-1); --wix-color-48: var(--wix-color-8); --wix-color-49: var(--wix-color-8); --wix-color-50: var(--wix-color-1); --wix-color-51: var(--wix-color-8); --wix-color-52: var(--wix-color-8); --wix-color-53: var(--wix-color-1); --wix-color-54: var(--wix-color-3); --wix-color-55: var(--wix-color-3);">
+                          <div data-hook="SliderGalleryDataHook.Root" class="lo0oex notCssPerBreakpoint AYEgRG">
+                            <div class="JagG9_">
+                              <style>
+                                .heightByImageRatio::before {
+                                  display: block;
+                                  content: "";
+                                }
+  
+                                .heightByImageRatio0::before {
+                                  padding-top: calc(100% / (3 / 2));
+                                }
+  
+                                .heightByImageRatio1::before {
+                                  padding-top: calc(100% / (4 / 3));
+                                }
+  
+                                .heightByImageRatio2::before {
+                                  padding-top: calc(100%);
+                                }
+  
+                                .heightByImageRatio3::before {
+                                  padding-top: calc(100% / (3 / 4));
+                                }
+  
+                                .heightByImageRatio4::before {
+                                  padding-top: calc(100% / (2 / 3));
+                                }
+  
+                                .heightByImageRatio5::before {
+                                  padding-top: calc(100% / (16 / 9));
+                                }
+  
+                                .heightByImageRatio6::before {
+                                  padding-top: calc(100% / (9 / 16));
+                                }
+                              </style>
+                              <div class="s1IgMQ" style="--totalNumberOfProducts: 6;">
+                                <div data-hook="ArrowsNavigationWrapperDataHook.Root" class="JMHZvW" role="group" tabindex="0" style="--arrowsContainerHeight: 210px;">
+                                  <div class="eGz2j5 kzGd1Z yTxYuD" data-hook="ArrowsNavigationWrapperDataHook.LeftArrowContainer" style="display: var(--gallery_showSliderNavigationArrows-display, inherit);"><button class="szZe_6o sQMsVuo s_ICAg2 oy2Ij2V---skin-4-line oy2Ij2V---theme-4-none sLkND7O s__8cjGkd YrOpKv" aria-label="Previous Product" data-hook="ArrowsNavigationWrapperDataHook.LeftArrow" tabindex="0" type="button"><span class="s__4n5Nwp"><span class="spJKodg"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="rN6xZT">
+                                            <path fill-rule="evenodd" d="M15.0729595,5 L15.7800663,5.70710678 L9.41020654,12.074 L15.7800663,18.4363861 L15.0729595,19.1434929 L7.99920654,12.077895 L8.00220654,12.074 L8,12.0717464 L15.0729595,5 Z"></path>
+                                          </svg></span></span></button></div>
+                                  <div class="QxZH_L">
+                                    <div class="swiper swiper-initialized swiper-horizontal swiper-watch-progress x4t_Ih swiper-backface-hidden" role="group" dir="ltr">
+                                      <div class="swiper-wrapper">
+                                        <div class="swiper-slide swiper-slide-fully-visible swiper-slide-active FQirFG VisibleSlideClassName" tabindex="-1" aria-hidden="false" style="width: 210px; margin-right: 20px;" data-swiper-slide-index="0">
+                                          <div data-hook="SliderGalleryDataHook.Slide" class="p_m9YY aG5eBy">
+                                            <div data-slug="i-m-a-product-21" role="group" aria-label="I'm a product. Best Seller gallery" data-hook="product-item-root" class="q4uTL8 ETPbIy KJlsir n_dqkS" style="--hrefCursor: inherit; --hrefPointerEvents: inherit;"><a href="https://www.wix.com/demone2/champplace/product-page/i-m-a-product-21" tabindex="0" class="AJctir bGFTjD" data-hook="product-item-container">
+                                                <div class="mS0yET heightByImageRatio heightByImageRatio2" aria-live="assertive" data-hook="ProductMediaDataHook.Images">
+                                                  <div class="Wo6AuW vALCqq" data-hook="ImageUiTpaWrapperDataHook.Wrapper_0">
+                                                    <div data-source-width="1000" data-source-height="1300" data-resize="cover" data-use-lqip="true" data-is-seo-bot="false" class="sBZB6ZT ovzs5GF---resize-5-cover ovzs5GF--fluid ovzs5GF--stretchImage ovzs5GF--verticalContainer s__65YAB3 fNMon8" data-hook="ImageUiTpaWrapperDataHook.Media_0">
+                                                      <wow-image class="d7xFyJ siU3Gdp" data-image-info="{&quot;displayMode&quot;:&quot;fill&quot;,&quot;isLQIP&quot;:true,&quot;isSEOBot&quot;:false,&quot;lqipTransition&quot;:null,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:1000,&quot;height&quot;:1300,&quot;uri&quot;:&quot;84770f_86ce5a8d3f8a45669f3ffbc87144bf42~mv2.jpg&quot;,&quot;name&quot;:&quot;84770f_86ce5a8d3f8a45669f3ffbc87144bf42~mv2.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-motion-part="BG_IMG undefined" data-bg-effect-name="" data-has-ssr-src=""><img src="https://static.wixstatic.com/media/84770f_86ce5a8d3f8a45669f3ffbc87144bf42~mv2.jpg/v1/fill/w_315,h_315,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_86ce5a8d3f8a45669f3ffbc87144bf42~mv2.jpg" alt="" style="width: 210px; height: 210px; object-fit: cover; object-position: 50% 50%;" fetchpriority="high"></wow-image>
+                                                    </div>
+                                                  </div>
+                                                  <div class="X9LBpm" style="display: var(--shouldShowRibbonOnImage-display, inherit);">
+                                                    <div class="INg0tB FbHYze" data-hook="RibbonDataHook.RibbonOnImage">Best Seller</div>
+                                                  </div>
+                                                  <div class="TNRewc" style="display: var(--showQuickView-display, inherit);"><button type="button" class="TUWFt6" data-hook="product-item-quick-view-button" tabindex="0">Quick View</button></div>
+                                                </div>
+                                              </a>
+                                              <div data-hook="not-image-container" class="CZ0KIs">
+                                                <div class="Jzh04F"><a href="https://www.wix.com/demone2/champplace/product-page/i-m-a-product-21" class="JPDEZd" data-hook="product-item-product-details-link" tabindex="0">
+                                                    <div style="display: var(--showProductDetails-display, inherit);">
+                                                      <div class="t2u_rw" data-hook="product-item-product-details">
+                                                        <div class="EiRAO9" data-hook="product-item-name-and-price-layout">
+                                                          <div style="display: var(--gallery_showProductName-display, inherit);">
+                                                            <p class="sQBqCra oXlzpFC---typography-11-runningText oXlzpFC---priority-7-primary syHtuvM FzO_a9" aria-hidden="false" data-hook="product-item-name">I'm a product</p>
+                                                          </div>
+                                                          <div class="ntj2AV" style="display: var(--gallery_showPrice-display, inherit);">
+                                                            <div class="T2QOcV">
+                                                              <div class="UqnnNN briESr z3Ybtk" data-hook="prices-container"><span class="iI5avH" data-hook="sr-product-item-price-to-pay">Price</span><span data-hook="product-item-price-to-pay" class="cfpn1d" data-wix-price="$120.00">$120.00</span></div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="ntj2AV" style="display: var(--gallery_showPrice-display, inherit);">
+                                                          <div class="DSIJ2F" style="display: var(--gallery_showDiscountName-display, inherit);"></div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </a>
+                                                  <div class="PgHPAM">
+                                                    <div id="comp-m3330nvp.product-gallery-details-slot-1" data-hook="slot-placeholder-comp-m3330nvp.product-gallery-details-slot-1" class=""></div>
+                                                  </div>
+                                                  <div></div>
+                                                </div>
+                                                <div class="bl0_pE">
+                                                  <div id="comp-m3330nvp.gallery-item-additional-buttons" data-hook="slot-placeholder-comp-m3330nvp.gallery-item-additional-buttons" class=""></div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-fully-visible swiper-slide-next FQirFG VisibleSlideClassName" tabindex="-1" aria-hidden="false" style="width: 210px; margin-right: 20px;" data-swiper-slide-index="1">
+                                          <div data-hook="SliderGalleryDataHook.Slide" class="p_m9YY aG5eBy">
+                                            <div data-slug="i-m-a-product-17" role="group" aria-label="I'm a product. Best Seller gallery" data-hook="product-item-root" class="q4uTL8 ETPbIy KJlsir vL5YxX n_dqkS" style="--hrefCursor: inherit; --hrefPointerEvents: inherit;"><a href="https://www.wix.com/demone2/champplace/product-page/i-m-a-product-17" tabindex="0" class="AJctir bGFTjD" data-hook="product-item-container">
+                                                <div class="mS0yET heightByImageRatio heightByImageRatio2" aria-live="assertive" data-hook="ProductMediaDataHook.Images">
+                                                  <div class="Wo6AuW vALCqq" data-hook="ImageUiTpaWrapperDataHook.Wrapper_0">
+                                                    <div data-source-width="1000" data-source-height="1300" data-resize="cover" data-use-lqip="true" data-is-seo-bot="false" class="sBZB6ZT ovzs5GF---resize-5-cover ovzs5GF--fluid ovzs5GF--stretchImage ovzs5GF--verticalContainer s__65YAB3 fNMon8" data-hook="ImageUiTpaWrapperDataHook.Media_0">
+                                                      <wow-image class="d7xFyJ siU3Gdp" data-image-info="{&quot;displayMode&quot;:&quot;fill&quot;,&quot;isLQIP&quot;:true,&quot;isSEOBot&quot;:false,&quot;lqipTransition&quot;:null,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:1000,&quot;height&quot;:1300,&quot;uri&quot;:&quot;c837a6_49c02cf9bcda49e7a194e447a886dcac~mv2.jpg&quot;,&quot;name&quot;:&quot;c837a6_49c02cf9bcda49e7a194e447a886dcac~mv2.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-motion-part="BG_IMG undefined" data-bg-effect-name="" data-has-ssr-src=""><img src="https://static.wixstatic.com/media/c837a6_49c02cf9bcda49e7a194e447a886dcac~mv2.jpg/v1/fill/w_315,h_315,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_49c02cf9bcda49e7a194e447a886dcac~mv2.jpg" alt="" style="width: 210px; height: 210px; object-fit: cover; object-position: 50% 50%;" fetchpriority="high"></wow-image>
+                                                    </div>
+                                                  </div>
+                                                  <div class="X9LBpm" style="display: var(--shouldShowRibbonOnImage-display, inherit);">
+                                                    <div class="INg0tB FbHYze" data-hook="RibbonDataHook.RibbonOnImage">Best Seller</div>
+                                                  </div>
+                                                  <div class="TNRewc" style="display: var(--showQuickView-display, inherit);"><button type="button" class="TUWFt6" data-hook="product-item-quick-view-button" tabindex="0">Quick View</button></div>
+                                                </div>
+                                              </a>
+                                              <div data-hook="not-image-container" class="CZ0KIs">
+                                                <div class="Jzh04F"><a href="https://www.wix.com/demone2/champplace/product-page/i-m-a-product-17" class="JPDEZd" data-hook="product-item-product-details-link" tabindex="0">
+                                                    <div style="display: var(--showProductDetails-display, inherit);">
+                                                      <div class="t2u_rw" data-hook="product-item-product-details">
+                                                        <div class="EiRAO9" data-hook="product-item-name-and-price-layout">
+                                                          <div style="display: var(--gallery_showProductName-display, inherit);">
+                                                            <p class="sQBqCra oXlzpFC---typography-11-runningText oXlzpFC---priority-7-primary syHtuvM FzO_a9" aria-hidden="false" data-hook="product-item-name">I'm a product</p>
+                                                          </div>
+                                                          <div class="ntj2AV" style="display: var(--gallery_showPrice-display, inherit);">
+                                                            <div class="T2QOcV">
+                                                              <div class="UqnnNN briESr z3Ybtk" data-hook="prices-container"><span class="iI5avH" data-hook="sr-product-item-price-to-pay">Price</span><span data-hook="product-item-price-to-pay" class="cfpn1d" data-wix-price="$120.00">$120.00</span></div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="ntj2AV" style="display: var(--gallery_showPrice-display, inherit);">
+                                                          <div class="DSIJ2F" style="display: var(--gallery_showDiscountName-display, inherit);"></div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </a>
+                                                  <div class="PgHPAM">
+                                                    <div id="comp-m3330nvp.product-gallery-details-slot-1" data-hook="slot-placeholder-comp-m3330nvp.product-gallery-details-slot-1" class=""></div>
+                                                  </div>
+                                                  <div></div>
+                                                </div>
+                                                <div class="bl0_pE">
+                                                  <div id="comp-m3330nvp.gallery-item-additional-buttons" data-hook="slot-placeholder-comp-m3330nvp.gallery-item-additional-buttons" class=""></div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-fully-visible FQirFG VisibleSlideClassName" tabindex="-1" aria-hidden="false" style="width: 210px; margin-right: 20px;" data-swiper-slide-index="2">
+                                          <div data-hook="SliderGalleryDataHook.Slide" class="p_m9YY aG5eBy">
+                                            <div data-slug="i-m-a-product-7" role="group" aria-label="I'm a product. Best Seller gallery" data-hook="product-item-root" class="q4uTL8 ETPbIy KJlsir n_dqkS" style="--hrefCursor: inherit; --hrefPointerEvents: inherit;"><a href="https://www.wix.com/demone2/champplace/product-page/i-m-a-product-7" tabindex="0" class="AJctir bGFTjD" data-hook="product-item-container">
+                                                <div class="mS0yET heightByImageRatio heightByImageRatio2" aria-live="assertive" data-hook="ProductMediaDataHook.Images">
+                                                  <div class="Wo6AuW vALCqq" data-hook="ImageUiTpaWrapperDataHook.Wrapper_0">
+                                                    <div data-source-width="1000" data-source-height="1300" data-resize="cover" data-use-lqip="true" data-is-seo-bot="false" class="sBZB6ZT ovzs5GF---resize-5-cover ovzs5GF--fluid ovzs5GF--stretchImage ovzs5GF--verticalContainer s__65YAB3 fNMon8" data-hook="ImageUiTpaWrapperDataHook.Media_0">
+                                                      <wow-image class="d7xFyJ siU3Gdp" data-image-info="{&quot;displayMode&quot;:&quot;fill&quot;,&quot;isLQIP&quot;:true,&quot;isSEOBot&quot;:false,&quot;lqipTransition&quot;:null,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:1000,&quot;height&quot;:1300,&quot;uri&quot;:&quot;c837a6_6068369882eb4a84baafb7309c639c13~mv2.jpg&quot;,&quot;name&quot;:&quot;c837a6_6068369882eb4a84baafb7309c639c13~mv2.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-motion-part="BG_IMG undefined" data-bg-effect-name="" data-has-ssr-src=""><img src="https://static.wixstatic.com/media/c837a6_6068369882eb4a84baafb7309c639c13~mv2.jpg/v1/fill/w_315,h_315,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_6068369882eb4a84baafb7309c639c13~mv2.jpg" alt="" style="width: 210px; height: 210px; object-fit: cover; object-position: 50% 50%;" fetchpriority="high"></wow-image>
+                                                    </div>
+                                                  </div>
+                                                  <div class="X9LBpm" style="display: var(--shouldShowRibbonOnImage-display, inherit);">
+                                                    <div class="INg0tB FbHYze" data-hook="RibbonDataHook.RibbonOnImage">Best Seller</div>
+                                                  </div>
+                                                  <div class="TNRewc" style="display: var(--showQuickView-display, inherit);"><button type="button" class="TUWFt6" data-hook="product-item-quick-view-button" tabindex="0">Quick View</button></div>
+                                                </div>
+                                              </a>
+                                              <div data-hook="not-image-container" class="CZ0KIs">
+                                                <div class="Jzh04F"><a href="https://www.wix.com/demone2/champplace/product-page/i-m-a-product-7" class="JPDEZd" data-hook="product-item-product-details-link" tabindex="0">
+                                                    <div style="display: var(--showProductDetails-display, inherit);">
+                                                      <div class="t2u_rw" data-hook="product-item-product-details">
+                                                        <div class="EiRAO9" data-hook="product-item-name-and-price-layout">
+                                                          <div style="display: var(--gallery_showProductName-display, inherit);">
+                                                            <p class="sQBqCra oXlzpFC---typography-11-runningText oXlzpFC---priority-7-primary syHtuvM FzO_a9" aria-hidden="false" data-hook="product-item-name">I'm a product</p>
+                                                          </div>
+                                                          <div class="ntj2AV" style="display: var(--gallery_showPrice-display, inherit);">
+                                                            <div class="T2QOcV">
+                                                              <div class="UqnnNN briESr z3Ybtk" data-hook="prices-container"><span class="iI5avH" data-hook="sr-product-item-price-to-pay">Price</span><span data-hook="product-item-price-to-pay" class="cfpn1d" data-wix-price="$40.00">$40.00</span></div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="ntj2AV" style="display: var(--gallery_showPrice-display, inherit);">
+                                                          <div class="DSIJ2F" style="display: var(--gallery_showDiscountName-display, inherit);"></div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </a>
+                                                  <div class="PgHPAM">
+                                                    <div id="comp-m3330nvp.product-gallery-details-slot-1" data-hook="slot-placeholder-comp-m3330nvp.product-gallery-details-slot-1" class=""></div>
+                                                  </div>
+                                                  <div></div>
+                                                </div>
+                                                <div class="bl0_pE">
+                                                  <div id="comp-m3330nvp.gallery-item-additional-buttons" data-hook="slot-placeholder-comp-m3330nvp.gallery-item-additional-buttons" class=""></div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-fully-visible FQirFG VisibleSlideClassName" tabindex="-1" aria-hidden="false" style="width: 210px; margin-right: 20px;" data-swiper-slide-index="3">
+                                          <div data-hook="SliderGalleryDataHook.Slide" class="p_m9YY aG5eBy">
+                                            <div data-slug="i-m-a-product-12" role="group" aria-label="I'm a product. Best Seller gallery" data-hook="product-item-root" class="q4uTL8 ETPbIy KJlsir vL5YxX n_dqkS" style="--hrefCursor: inherit; --hrefPointerEvents: inherit;"><a href="https://www.wix.com/demone2/champplace/product-page/i-m-a-product-12" tabindex="0" class="AJctir bGFTjD" data-hook="product-item-container">
+                                                <div class="mS0yET heightByImageRatio heightByImageRatio2" aria-live="assertive" data-hook="ProductMediaDataHook.Images">
+                                                  <div class="Wo6AuW vALCqq" data-hook="ImageUiTpaWrapperDataHook.Wrapper_0">
+                                                    <div data-source-width="1000" data-source-height="1300" data-resize="cover" data-use-lqip="true" data-is-seo-bot="false" class="sBZB6ZT ovzs5GF---resize-5-cover ovzs5GF--fluid ovzs5GF--stretchImage ovzs5GF--verticalContainer s__65YAB3 fNMon8" data-hook="ImageUiTpaWrapperDataHook.Media_0">
+                                                      <wow-image class="d7xFyJ siU3Gdp" data-image-info="{&quot;displayMode&quot;:&quot;fill&quot;,&quot;isLQIP&quot;:true,&quot;isSEOBot&quot;:false,&quot;lqipTransition&quot;:null,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:1000,&quot;height&quot;:1300,&quot;uri&quot;:&quot;84770f_19130b60829d46389db79db783c50db4~mv2.jpg&quot;,&quot;name&quot;:&quot;84770f_19130b60829d46389db79db783c50db4~mv2.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-motion-part="BG_IMG undefined" data-bg-effect-name="" data-has-ssr-src=""><img src="https://static.wixstatic.com/media/84770f_19130b60829d46389db79db783c50db4~mv2.jpg/v1/fill/w_315,h_315,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_19130b60829d46389db79db783c50db4~mv2.jpg" alt="" style="width: 210px; height: 210px; object-fit: cover; object-position: 50% 50%;" fetchpriority="high"></wow-image>
+                                                    </div>
+                                                  </div>
+                                                  <div class="X9LBpm" style="display: var(--shouldShowRibbonOnImage-display, inherit);">
+                                                    <div class="INg0tB FbHYze" data-hook="RibbonDataHook.RibbonOnImage">Best Seller</div>
+                                                  </div>
+                                                  <div class="TNRewc" style="display: var(--showQuickView-display, inherit);"><button type="button" class="TUWFt6" data-hook="product-item-quick-view-button" tabindex="0">Quick View</button></div>
+                                                </div>
+                                              </a>
+                                              <div data-hook="not-image-container" class="CZ0KIs">
+                                                <div class="Jzh04F"><a href="https://www.wix.com/demone2/champplace/product-page/i-m-a-product-12" class="JPDEZd" data-hook="product-item-product-details-link" tabindex="0">
+                                                    <div style="display: var(--showProductDetails-display, inherit);">
+                                                      <div class="t2u_rw" data-hook="product-item-product-details">
+                                                        <div class="EiRAO9" data-hook="product-item-name-and-price-layout">
+                                                          <div style="display: var(--gallery_showProductName-display, inherit);">
+                                                            <p class="sQBqCra oXlzpFC---typography-11-runningText oXlzpFC---priority-7-primary syHtuvM FzO_a9" aria-hidden="false" data-hook="product-item-name">I'm a product</p>
+                                                          </div>
+                                                          <div class="ntj2AV" style="display: var(--gallery_showPrice-display, inherit);">
+                                                            <div class="T2QOcV">
+                                                              <div class="UqnnNN briESr z3Ybtk" data-hook="prices-container"><span class="iI5avH" data-hook="sr-product-item-price-to-pay">Price</span><span data-hook="product-item-price-to-pay" class="cfpn1d" data-wix-price="$120.00">$120.00</span></div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="ntj2AV" style="display: var(--gallery_showPrice-display, inherit);">
+                                                          <div class="DSIJ2F" style="display: var(--gallery_showDiscountName-display, inherit);"></div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </a>
+                                                  <div class="PgHPAM">
+                                                    <div id="comp-m3330nvp.product-gallery-details-slot-1" data-hook="slot-placeholder-comp-m3330nvp.product-gallery-details-slot-1" class=""></div>
+                                                  </div>
+                                                  <div></div>
+                                                </div>
+                                                <div class="bl0_pE">
+                                                  <div id="comp-m3330nvp.gallery-item-additional-buttons" data-hook="slot-placeholder-comp-m3330nvp.gallery-item-additional-buttons" class=""></div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="swiper-slide FQirFG" tabindex="-1" aria-hidden="true" style="width: 210px; margin-right: 20px;" data-swiper-slide-index="4">
+                                          <div data-hook="SliderGalleryDataHook.Slide" class="p_m9YY aG5eBy">
+                                            <div data-slug="i-m-a-product-16" role="group" aria-label="I'm a product. Best Seller gallery" data-hook="product-item-root" class="q4uTL8 ETPbIy KJlsir n_dqkS" style="--hrefCursor: inherit; --hrefPointerEvents: inherit;"><a href="https://www.wix.com/demone2/champplace/product-page/i-m-a-product-16" tabindex="-1" class="AJctir bGFTjD" data-hook="product-item-container">
+                                                <div class="mS0yET heightByImageRatio heightByImageRatio2" aria-live="assertive" data-hook="ProductMediaDataHook.Images">
+                                                  <div class="Wo6AuW vALCqq" data-hook="ImageUiTpaWrapperDataHook.Wrapper_0">
+                                                    <div data-source-width="1000" data-source-height="1300" data-resize="cover" data-use-lqip="true" data-is-seo-bot="false" class="sBZB6ZT ovzs5GF---resize-5-cover ovzs5GF--fluid ovzs5GF--stretchImage ovzs5GF--verticalContainer s__65YAB3 fNMon8" data-hook="ImageUiTpaWrapperDataHook.Media_0">
+                                                      <wow-image class="d7xFyJ siU3Gdp" data-image-info="{&quot;displayMode&quot;:&quot;fill&quot;,&quot;isLQIP&quot;:true,&quot;isSEOBot&quot;:false,&quot;lqipTransition&quot;:null,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:1000,&quot;height&quot;:1300,&quot;uri&quot;:&quot;c837a6_f5da0944160b4d849d8c8ec90b1adfe6~mv2.jpg&quot;,&quot;name&quot;:&quot;c837a6_f5da0944160b4d849d8c8ec90b1adfe6~mv2.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-motion-part="BG_IMG undefined" data-bg-effect-name="" data-has-ssr-src=""><img src="https://static.wixstatic.com/media/c837a6_f5da0944160b4d849d8c8ec90b1adfe6~mv2.jpg/v1/fill/w_315,h_315,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_f5da0944160b4d849d8c8ec90b1adfe6~mv2.jpg" alt="" style="width: 210px; height: 210px; object-fit: cover; object-position: 50% 50%;" fetchpriority="high"></wow-image>
+                                                    </div>
+                                                  </div>
+                                                  <div class="X9LBpm" style="display: var(--shouldShowRibbonOnImage-display, inherit);">
+                                                    <div class="INg0tB FbHYze" data-hook="RibbonDataHook.RibbonOnImage">Best Seller</div>
+                                                  </div>
+                                                  <div class="TNRewc" style="display: var(--showQuickView-display, inherit);"><button type="button" class="TUWFt6" data-hook="product-item-quick-view-button" tabindex="-1">Quick View</button></div>
+                                                </div>
+                                              </a>
+                                              <div data-hook="not-image-container" class="CZ0KIs">
+                                                <div class="Jzh04F"><a href="https://www.wix.com/demone2/champplace/product-page/i-m-a-product-16" class="JPDEZd" data-hook="product-item-product-details-link" tabindex="-1">
+                                                    <div style="display: var(--showProductDetails-display, inherit);">
+                                                      <div class="t2u_rw" data-hook="product-item-product-details">
+                                                        <div class="EiRAO9" data-hook="product-item-name-and-price-layout">
+                                                          <div style="display: var(--gallery_showProductName-display, inherit);">
+                                                            <p class="sQBqCra oXlzpFC---typography-11-runningText oXlzpFC---priority-7-primary syHtuvM FzO_a9" aria-hidden="false" data-hook="product-item-name">I'm a product</p>
+                                                          </div>
+                                                          <div class="ntj2AV" style="display: var(--gallery_showPrice-display, inherit);">
+                                                            <div class="T2QOcV">
+                                                              <div class="UqnnNN briESr z3Ybtk" data-hook="prices-container"><span class="iI5avH" data-hook="sr-product-item-price-to-pay">Price</span><span data-hook="product-item-price-to-pay" class="cfpn1d" data-wix-price="$120.00">$120.00</span></div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="ntj2AV" style="display: var(--gallery_showPrice-display, inherit);">
+                                                          <div class="DSIJ2F" style="display: var(--gallery_showDiscountName-display, inherit);"></div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </a>
+                                                  <div class="PgHPAM">
+                                                    <div id="comp-m3330nvp.product-gallery-details-slot-1" data-hook="slot-placeholder-comp-m3330nvp.product-gallery-details-slot-1" class=""></div>
+                                                  </div>
+                                                  <div></div>
+                                                </div>
+                                                <div class="bl0_pE">
+                                                  <div id="comp-m3330nvp.gallery-item-additional-buttons" data-hook="slot-placeholder-comp-m3330nvp.gallery-item-additional-buttons" class=""></div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="swiper-slide FQirFG" tabindex="-1" aria-hidden="true" style="width: 210px; margin-right: 20px;" data-swiper-slide-index="5">
+                                          <div data-hook="SliderGalleryDataHook.Slide" class="p_m9YY aG5eBy">
+                                            <div data-slug="i-m-a-product-10" role="group" aria-label="I'm a product. Best Seller gallery" data-hook="product-item-root" class="q4uTL8 ETPbIy KJlsir vL5YxX n_dqkS" style="--hrefCursor: inherit; --hrefPointerEvents: inherit;"><a href="https://www.wix.com/demone2/champplace/product-page/i-m-a-product-10" tabindex="-1" class="AJctir bGFTjD" data-hook="product-item-container">
+                                                <div class="mS0yET heightByImageRatio heightByImageRatio2" aria-live="assertive" data-hook="ProductMediaDataHook.Images">
+                                                  <div class="Wo6AuW vALCqq" data-hook="ImageUiTpaWrapperDataHook.Wrapper_0">
+                                                    <div data-source-width="1000" data-source-height="1300" data-resize="cover" data-use-lqip="true" data-is-seo-bot="false" class="sBZB6ZT ovzs5GF---resize-5-cover ovzs5GF--fluid ovzs5GF--stretchImage ovzs5GF--verticalContainer s__65YAB3 fNMon8" data-hook="ImageUiTpaWrapperDataHook.Media_0">
+                                                      <wow-image class="d7xFyJ siU3Gdp" data-image-info="{&quot;displayMode&quot;:&quot;fill&quot;,&quot;isLQIP&quot;:true,&quot;isSEOBot&quot;:false,&quot;lqipTransition&quot;:null,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:1000,&quot;height&quot;:1300,&quot;uri&quot;:&quot;c837a6_bee753682b654d69ae5ceaad35370ffb~mv2.jpg&quot;,&quot;name&quot;:&quot;c837a6_bee753682b654d69ae5ceaad35370ffb~mv2.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-motion-part="BG_IMG undefined" data-bg-effect-name="" data-has-ssr-src=""><img src="https://static.wixstatic.com/media/c837a6_bee753682b654d69ae5ceaad35370ffb~mv2.jpg/v1/fill/w_147,h_191,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/c837a6_bee753682b654d69ae5ceaad35370ffb~mv2.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;"></wow-image>
+                                                    </div>
+                                                  </div>
+                                                  <div class="X9LBpm" style="display: var(--shouldShowRibbonOnImage-display, inherit);">
+                                                    <div class="INg0tB FbHYze" data-hook="RibbonDataHook.RibbonOnImage">Best Seller</div>
+                                                  </div>
+                                                  <div class="TNRewc" style="display: var(--showQuickView-display, inherit);"><button type="button" class="TUWFt6" data-hook="product-item-quick-view-button" tabindex="-1">Quick View</button></div>
+                                                </div>
+                                              </a>
+                                              <div data-hook="not-image-container" class="CZ0KIs">
+                                                <div class="Jzh04F"><a href="https://www.wix.com/demone2/champplace/product-page/i-m-a-product-10" class="JPDEZd" data-hook="product-item-product-details-link" tabindex="-1">
+                                                    <div style="display: var(--showProductDetails-display, inherit);">
+                                                      <div class="t2u_rw" data-hook="product-item-product-details">
+                                                        <div class="EiRAO9" data-hook="product-item-name-and-price-layout">
+                                                          <div style="display: var(--gallery_showProductName-display, inherit);">
+                                                            <p class="sQBqCra oXlzpFC---typography-11-runningText oXlzpFC---priority-7-primary syHtuvM FzO_a9" aria-hidden="false" data-hook="product-item-name">I'm a product</p>
+                                                          </div>
+                                                          <div class="ntj2AV" style="display: var(--gallery_showPrice-display, inherit);">
+                                                            <div class="T2QOcV">
+                                                              <div class="UqnnNN briESr z3Ybtk" data-hook="prices-container"><span class="iI5avH" data-hook="sr-product-item-price-to-pay">Price</span><span data-hook="product-item-price-to-pay" class="cfpn1d" data-wix-price="$100.00">$100.00</span></div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div class="ntj2AV" style="display: var(--gallery_showPrice-display, inherit);">
+                                                          <div class="DSIJ2F" style="display: var(--gallery_showDiscountName-display, inherit);"></div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </a>
+                                                  <div class="PgHPAM">
+                                                    <div id="comp-m3330nvp.product-gallery-details-slot-1" data-hook="slot-placeholder-comp-m3330nvp.product-gallery-details-slot-1" class=""></div>
+                                                  </div>
+                                                  <div></div>
+                                                </div>
+                                                <div class="bl0_pE">
+                                                  <div id="comp-m3330nvp.gallery-item-additional-buttons" data-hook="slot-placeholder-comp-m3330nvp.gallery-item-additional-buttons" class=""></div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="eGz2j5 Xqp1OC yTxYuD" data-hook="ArrowsNavigationWrapperDataHook.RightArrowContainer" style="display: var(--gallery_showSliderNavigationArrows-display, inherit);"><button class="szZe_6o sQMsVuo s_ICAg2 oy2Ij2V---skin-4-line oy2Ij2V---theme-4-none sLkND7O s__8cjGkd YrOpKv" aria-label="Next Product" data-hook="ArrowsNavigationWrapperDataHook.RightArrow" tabindex="0" type="button"><span class="s__4n5Nwp"><span class="spJKodg"><svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" class="rN6xZT">
+                                            <path fill-rule="evenodd" d="M8.70710678,4.99810828 L15.068,11.3651083 L15.0722115,11.3620693 L15.7793183,12.0691761 L15.776,12.0721083 L15.7782433,12.0758831 L15.0711365,12.7829899 L15.069,12.7801083 L8.70710678,19.1434929 L8,18.4363861 L14.361,12.0721083 L8,5.70521506 L8.70710678,4.99810828 Z"></path>
+                                          </svg></span></span></button></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!--Get your gear on section-->
+  <section id="comp-lt8qspgl" tabindex="-1" class="Oqnisf comp-lt8qspgl wixui-section" data-block-level-container="ClassicSection">
+    <div id="bgLayers_comp-lt8qspgl" data-hook="bgLayers" data-motion-part="BG_LAYER comp-lt8qspgl" class="MW5IWV">
+      <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+      <div id="bgMedia_comp-lt8qspgl" data-motion-part="BG_MEDIA comp-lt8qspgl" class="VgO9Yg"></div>
+    </div>
+    <div data-mesh-id="comp-lt8qspglinlineContent" data-testid="inline-content" class="">
+      <div data-mesh-id="comp-lt8qspglinlineContent-gridContainer" data-testid="mesh-container-content">
+        <section id="comp-l7no7qb5" class="comp-l7no7qb5 CohWsy wixui-column-strip">
+          <div id="bgLayers_comp-l7no7qb5" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l7no7qb5" class="if7Vw2">
+            <div data-testid="colorUnderlay" class="tcElKx i1tH8h"></div>
+            <div id="bgMedia_comp-l7no7qb5" data-motion-part="BG_MEDIA comp-l7no7qb5" class="wG8dni"></div>
+          </div>
+          <div data-testid="columns" class="V5AUxf">
+            <div id="comp-l7no7qby" class="comp-l7no7qby YzqVVZ wixui-column-strip__column">
+              <div id="bgLayers_comp-l7no7qby" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l7no7qby" class="MW5IWV">
+                <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+                <div id="bgMedia_comp-l7no7qby" data-motion-part="BG_MEDIA comp-l7no7qby" class="VgO9Yg">
+                  <wow-image id="img_comp-l7no7qby" class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage" data-image-info="{&quot;containerId&quot;:&quot;comp-l7no7qby&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:490,&quot;targetHeight&quot;:1027,&quot;isLQIP&quot;:true,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:9031,&quot;height&quot;:5426,&quot;uri&quot;:&quot;c837a6_b1b8b280ee34473da9446ea2222f2360~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-motion-part="BG_IMG comp-l7no7qby" data-bg-effect-name="" data-has-ssr-src="true"><img src="https://static.wixstatic.com/media/c837a6_b1b8b280ee34473da9446ea2222f2360~mv2.jpg/v1/fill/w_882,h_1541,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_b1b8b280ee34473da9446ea2222f2360~mv2.jpg" alt="" width="490" height="1027" style="width: 588px; height: 1027px; object-fit: cover; object-position: 50% 50%;" data-ssr-src-done="true" fetchpriority="high"></wow-image>
+                </div>
+              </div>
+              <div data-mesh-id="comp-l7no7qbyinlineContent" data-testid="inline-content" class="">
+                <div data-mesh-id="comp-l7no7qbyinlineContent-gridContainer" data-testid="mesh-container-content"></div>
+              </div>
+            </div>
+            <div id="comp-l7no8gfo" class="comp-l7no8gfo YzqVVZ wixui-column-strip__column" style="--motion-comp-height: 1027px;">
+              <div id="bgLayers_comp-l7no8gfo" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l7no8gfo" class="MW5IWV">
+                <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+                <div id="bgMedia_comp-l7no8gfo" data-motion-part="BG_MEDIA comp-l7no8gfo" class="VgO9Yg">
+                  <wow-image id="img_comp-l7no8gfo" class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage" data-image-info="{&quot;containerId&quot;:&quot;comp-l7no8gfo&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:490,&quot;targetHeight&quot;:1027,&quot;isLQIP&quot;:true,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:3698,&quot;height&quot;:5572,&quot;uri&quot;:&quot;84770f_02e1eed07fa4419e9b25b29da778f5f7~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-motion-part="BG_IMG comp-l7no8gfo" data-bg-effect-name="" data-has-ssr-src="true"><img src="https://static.wixstatic.com/media/84770f_02e1eed07fa4419e9b25b29da778f5f7~mv2.jpg/v1/fill/w_735,h_1541,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_02e1eed07fa4419e9b25b29da778f5f7~mv2.jpg" alt="" width="490" height="1027" style="width: 490px; height: 1027px; object-fit: cover; object-position: 50% 50%;" data-ssr-src-done="true" fetchpriority="high"></wow-image>
+                </div>
+              </div>
+              <div data-mesh-id="comp-l7no8gfoinlineContent" data-testid="inline-content" class="">
+                <div data-mesh-id="comp-l7no8gfoinlineContent-gridContainer" data-testid="mesh-container-content"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="comp-l7nobfeb" class="comp-l7nobfeb CohWsy wixui-column-strip">
+          <div id="bgLayers_comp-l7nobfeb" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l7nobfeb" class="if7Vw2">
+            <div data-testid="colorUnderlay" class="tcElKx i1tH8h"></div>
+            <div id="bgMedia_comp-l7nobfeb" data-motion-part="BG_MEDIA comp-l7nobfeb" class="wG8dni"></div>
+          </div>
+          <div data-testid="columns" class="V5AUxf">
+            <div id="comp-l7nobff7" class="comp-l7nobff7 YzqVVZ wixui-column-strip__column">
+              <div id="bgLayers_comp-l7nobff7" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l7nobff7" class="MW5IWV">
+                <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+                <div id="bgMedia_comp-l7nobff7" data-motion-part="BG_MEDIA comp-l7nobff7" class="VgO9Yg"></div>
+              </div>
+              <div data-mesh-id="comp-l7nobff7inlineContent" data-testid="inline-content" class="">
+                <div data-mesh-id="comp-l7nobff7inlineContent-gridContainer" data-testid="mesh-container-content">
+                  <div id="comp-l7nqx7on" class="KaEeLN comp-l7nqx7on">
+                    <div class="uYj0Sg wixui-box" data-testid="container-bg"></div>
+                    <div data-mesh-id="comp-l7nqx7oninlineContent" data-testid="inline-content" class="">
+                      <div data-mesh-id="comp-l7nqx7oninlineContent-gridContainer" data-testid="mesh-container-content">
+                        <div id="comp-l7sovicu" class="MazNVa comp-l7sovicu wixui-image">
+                          <div data-testid="linkElement" class="j7pOnl">
+                            <wow-image id="img_comp-l7sovicu" class="HlRz5e BI8PVQ" data-image-info="{&quot;containerId&quot;:&quot;comp-l7sovicu&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:231,&quot;targetHeight&quot;:221,&quot;isLQIP&quot;:true,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:1979,&quot;height&quot;:2492,&quot;uri&quot;:&quot;c837a6_01810ce3fbb54379acd4f4a158584205~mv2.png&quot;,&quot;name&quot;:&quot;shutterstock_1944368761-[Converted]-01.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;crop&quot;:{&quot;x&quot;:0,&quot;y&quot;:436,&quot;width&quot;:1979,&quot;height&quot;:1886,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;}}}" data-motion-part="BG_IMG comp-l7sovicu" data-bg-effect-name="" data-has-ssr-src="true"><img src="https://static.wixstatic.com/media/c837a6_01810ce3fbb54379acd4f4a158584205~mv2.png/v1/crop/x_0,y_436,w_1979,h_1886/fill/w_347,h_332,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/shutterstock_1944368761-%5BConverted%5D-01.png" alt="" width="231" height="221" loading="lazy" style="width: 231px; height: 221px; object-fit: cover; object-position: 50% 50%;" data-ssr-src-done="true" fetchpriority="high"></wow-image>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="comp-l7ohl4zj" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l7ohl4zj wixui-rich-text" data-testid="richTextElement" data-motion-enter="done">
+                    <h2 class="font_2 wixui-rich-text__text" style="line-height:0.9em; font-size:90px;"><span class="color_19 wixui-rich-text__text"><span style="letter-spacing:0em;" class="wixui-rich-text__text">GET YOUR<br class="wixui-rich-text__text">
+                          GEAR ON</span></span></h2>
+                  </div>
+                  <div id="comp-l7ohn4wm" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l7ohn4wm wixui-rich-text" data-testid="richTextElement" data-motion-enter="done">
+                    <p class="font_7 wixui-rich-text__text" style="font-size:22px;"><span class="color_19 wixui-rich-text__text">Shop the latest jerseys</span></p>
+                  </div>
+                  <div class="comp-l7ohnzsk FubTgk" id="comp-l7ohnzsk" aria-disabled="false" data-motion-enter="done"><a data-testid="linkElement" href="#" target="_self" class="uDW_Qe wixui-button PlZyDq" aria-disabled="false"><span class="l7_2fn wixui-button__label">DON’T MISS OUT</span></a></div>
+                </div>
+              </div>
+            </div>
+            <div id="comp-l7nobyxz" class="comp-l7nobyxz YzqVVZ wixui-column-strip__column">
+              <div id="bgLayers_comp-l7nobyxz" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l7nobyxz" class="MW5IWV">
+                <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+                <div id="bgMedia_comp-l7nobyxz" data-motion-part="BG_MEDIA comp-l7nobyxz" class="VgO9Yg"></div>
+              </div>
+              <div data-mesh-id="comp-l7nobyxzinlineContent" data-testid="inline-content" class="">
+                <div data-mesh-id="comp-l7nobyxzinlineContent-gridContainer" data-testid="mesh-container-content"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!--Shop by category section-->
+  <div id="comp-l7ohregx" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l7ohregx wixui-rich-text" data-testid="richTextElement" data-motion-enter="done">
+    <h2 class="font_2 wixui-rich-text__text" style="line-height:0.9em; text-align:right; font-size:90px;"><span class="color_11 wixui-rich-text__text">
+        <span style="letter-spacing:0em;" class="wixui-rich-text__text">SHOP BY CATEGORY</span></span></h2>
+  </div>
+  <section id="comp-l8r1k6xh" class="comp-l8r1k6xh CohWsy wixui-column-strip">
+    <div id="bgLayers_comp-l8r1k6xh" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l8r1k6xh" class="if7Vw2">
+      <div data-testid="colorUnderlay" class="tcElKx i1tH8h"></div>
+      <div id="bgMedia_comp-l8r1k6xh" data-motion-part="BG_MEDIA comp-l8r1k6xh" class="wG8dni"></div>
+    </div>
+    <div data-testid="columns" class="V5AUxf">
+      <div id="comp-l8r1k6z7" class="comp-l8r1k6z7 YzqVVZ wixui-column-strip__column">
+        <div id="bgLayers_comp-l8r1k6z7" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l8r1k6z7" class="MW5IWV">
+          <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+          <div id="bgMedia_comp-l8r1k6z7" data-motion-part="BG_MEDIA comp-l8r1k6z7" class="VgO9Yg">
+            <wow-image id="img_comp-l8r1k6z7" class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage" data-image-info="{&quot;containerId&quot;:&quot;comp-l8r1k6z7&quot;,&quot;alignType&quot;:&quot;bottom&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:286,&quot;targetHeight&quot;:605,&quot;isLQIP&quot;:true,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:1000,&quot;height&quot;:1200,&quot;uri&quot;:&quot;c837a6_721ff3f4a5b6454685e81c4df42ca726~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-motion-part="BG_IMG comp-l8r1k6z7" data-bg-effect-name="" data-has-ssr-src="true"><img src="https://static.wixstatic.com/media/c837a6_721ff3f4a5b6454685e81c4df42ca726~mv2.jpg/v1/fill/w_429,h_908,al_b,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_721ff3f4a5b6454685e81c4df42ca726~mv2.jpg" alt="" width="286" height="605" style="width: 286px; height: 605px; object-fit: cover; object-position: 50% 100%;" data-ssr-src-done="true" fetchpriority="high"></wow-image>
+          </div>
+        </div>
+        <div data-mesh-id="comp-l8r1k6z7inlineContent" data-testid="inline-content" class="">
+          <div data-mesh-id="comp-l8r1k6z7inlineContent-gridContainer" data-testid="mesh-container-content">
+            <div id="comp-l8r3o9p7" class="KaEeLN comp-l8r3o9p7">
+              <div class="uYj0Sg wixui-box" data-testid="container-bg"></div>
+              <div data-mesh-id="comp-l8r3o9p7inlineContent" data-testid="inline-content" class="">
+                <div data-mesh-id="comp-l8r3o9p7inlineContent-gridContainer" data-testid="mesh-container-content">
+                  <div id="comp-l8r3o9qg" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l8r3o9qg wixui-rich-text" data-testid="richTextElement">
+                    <p class="font_4 wixui-rich-text__text" style="text-align:center; font-size:35px;"><a href="https://www.wix.com/demone2/champplace/category/soccer-balls" target="_self" class="wixui-rich-text__text"><span class="color_19 wixui-rich-text__text"><span style="text-decoration:underline;" class="wixui-rich-text__text">SOCCER BALLS</span></span></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="comp-l8r1kq35" class="comp-l8r1kq35 YzqVVZ wixui-column-strip__column">
+        <div id="bgLayers_comp-l8r1kq35" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l8r1kq35" class="MW5IWV">
+          <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+          <div id="bgMedia_comp-l8r1kq35" data-motion-part="BG_MEDIA comp-l8r1kq35" class="VgO9Yg">
+            <wow-image id="img_comp-l8r1kq35" class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage" data-image-info="{&quot;containerId&quot;:&quot;comp-l8r1kq35&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:287,&quot;targetHeight&quot;:605,&quot;isLQIP&quot;:true,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:1000,&quot;height&quot;:1200,&quot;uri&quot;:&quot;c837a6_bd235148c3ed4d14851cd357471866cf~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-motion-part="BG_IMG comp-l8r1kq35" data-bg-effect-name="" data-has-ssr-src="true"><img src="https://static.wixstatic.com/media/c837a6_bd235148c3ed4d14851cd357471866cf~mv2.jpg/v1/fill/w_431,h_908,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_bd235148c3ed4d14851cd357471866cf~mv2.jpg" alt="" width="287" height="605" style="width: 287px; height: 605px; object-fit: cover; object-position: 50% 50%;" data-ssr-src-done="true" fetchpriority="high"></wow-image>
+          </div>
+        </div>
+        <div data-mesh-id="comp-l8r1kq35inlineContent" data-testid="inline-content" class="">
+          <div data-mesh-id="comp-l8r1kq35inlineContent-gridContainer" data-testid="mesh-container-content">
+            <div id="comp-l8r2zucu" class="KaEeLN comp-l8r2zucu" style="--motion-clip-start: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);" data-motion-enter="done">
+              <div class="uYj0Sg wixui-box" data-testid="container-bg"></div>
+              <div data-mesh-id="comp-l8r2zucuinlineContent" data-testid="inline-content" class="">
+                <div data-mesh-id="comp-l8r2zucuinlineContent-gridContainer" data-testid="mesh-container-content">
+                  <div id="comp-l8r2zuds" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l8r2zuds wixui-rich-text" data-testid="richTextElement">
+                    <p class="font_4 wixui-rich-text__text" style="text-align:center; font-size:35px;"><a href="https://www.wix.com/demone2/champplace/category/jerseys" target="_self" class="wixui-rich-text__text"><span class="color_19 wixui-rich-text__text"><span style="text-decoration:underline;" class="wixui-rich-text__text">JERSEYS</span></span></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="comp-l8r1kwi7" class="comp-l8r1kwi7 YzqVVZ wixui-column-strip__column">
+        <div id="bgLayers_comp-l8r1kwi7" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l8r1kwi7" class="MW5IWV">
+          <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+          <div id="bgMedia_comp-l8r1kwi7" data-motion-part="BG_MEDIA comp-l8r1kwi7" class="VgO9Yg">
+            <wow-image id="img_comp-l8r1kwi7" class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage" data-image-info="{&quot;containerId&quot;:&quot;comp-l8r1kwi7&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:287,&quot;targetHeight&quot;:605,&quot;isLQIP&quot;:true,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:1000,&quot;height&quot;:1200,&quot;uri&quot;:&quot;c837a6_9316b550525e46e98f262de4c59847b1~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-motion-part="BG_IMG comp-l8r1kwi7" data-bg-effect-name="" data-has-ssr-src="true"><img src="https://static.wixstatic.com/media/c837a6_9316b550525e46e98f262de4c59847b1~mv2.jpg/v1/fill/w_431,h_908,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_9316b550525e46e98f262de4c59847b1~mv2.jpg" alt="" width="287" height="605" style="width: 287px; height: 605px; object-fit: cover; object-position: 50% 50%;" data-ssr-src-done="true" fetchpriority="high"></wow-image>
+          </div>
+        </div>
+        <div data-mesh-id="comp-l8r1kwi7inlineContent" data-testid="inline-content" class="">
+          <div data-mesh-id="comp-l8r1kwi7inlineContent-gridContainer" data-testid="mesh-container-content">
+            <div id="comp-l8sff091" class="KaEeLN comp-l8sff091" style="--motion-clip-start: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);" data-motion-enter="done">
+              <div class="uYj0Sg wixui-box" data-testid="container-bg"></div>
+              <div data-mesh-id="comp-l8sff091inlineContent" data-testid="inline-content" class="">
+                <div data-mesh-id="comp-l8sff091inlineContent-gridContainer" data-testid="mesh-container-content">
+                  <div id="comp-l8sff0a4" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l8sff0a4 wixui-rich-text" data-testid="richTextElement">
+                    <p class="font_4 wixui-rich-text__text" style="text-align:center; font-size:35px;"><a href="https://www.wix.com/demone2/champplace/category/hats" target="_self" class="wixui-rich-text__text"><span class="color_19 wixui-rich-text__text"><span style="text-decoration:underline;" class="wixui-rich-text__text">HATS</span></span></a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Shop your teams must have section-->
+  <section id="comp-lt8qspgn" tabindex="-1" class="Oqnisf comp-lt8qspgn wixui-section" data-block-level-container="ClassicSection">
+    <div id="bgLayers_comp-lt8qspgn" data-hook="bgLayers" data-motion-part="BG_LAYER comp-lt8qspgn" class="MW5IWV">
+      <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+      <div id="bgMedia_comp-lt8qspgn" data-motion-part="BG_MEDIA comp-lt8qspgn" class="VgO9Yg"></div>
+    </div>
+    <div data-mesh-id="comp-lt8qspgninlineContent" data-testid="inline-content" class="">
+      <div data-mesh-id="comp-lt8qspgninlineContent-gridContainer" data-testid="mesh-container-content">
+        <section id="comp-l7nouovu" class="comp-l7nouovu CohWsy wixui-column-strip">
+          <div id="bgLayers_comp-l7nouovu" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l7nouovu" class="if7Vw2">
+            <div data-testid="colorUnderlay" class="tcElKx i1tH8h"></div>
+            <div id="bgMedia_comp-l7nouovu" data-motion-part="BG_MEDIA comp-l7nouovu" class="wG8dni"></div>
+          </div>
+          <div data-testid="columns" class="V5AUxf">
+            <div id="comp-l7nouowk" class="comp-l7nouowk YzqVVZ wixui-column-strip__column">
+              <div id="bgLayers_comp-l7nouowk" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l7nouowk" class="MW5IWV">
+                <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+                <div id="bgMedia_comp-l7nouowk" data-motion-part="BG_MEDIA comp-l7nouowk" class="VgO9Yg">
+                  <wow-image id="img_comp-l7nouowk" class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage" data-image-info="{&quot;containerId&quot;:&quot;comp-l7nouowk&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:980,&quot;targetHeight&quot;:1096,&quot;isLQIP&quot;:true,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:9031,&quot;height&quot;:5426,&quot;uri&quot;:&quot;c837a6_877ce03f0eaa4a07a2b40663049d5916~mv2.jpg&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-motion-part="BG_IMG comp-l7nouowk" data-bg-effect-name="" data-has-ssr-src="true"><img src="https://static.wixstatic.com/media/c837a6_877ce03f0eaa4a07a2b40663049d5916~mv2.jpg/v1/fill/w_1470,h_1644,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_877ce03f0eaa4a07a2b40663049d5916~mv2.jpg" alt="" width="980" height="1096" style="width: 980px; height: 1096px; object-fit: cover; object-position: 50% 50%;" data-ssr-src-done="true" fetchpriority="high"></wow-image>
+                </div>
+              </div>
+              <div data-mesh-id="comp-l7nouowkinlineContent" data-testid="inline-content" class="">
+                <div data-mesh-id="comp-l7nouowkinlineContent-gridContainer" data-testid="mesh-container-content">
+                  <div id="comp-l7oo91nj" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l7oo91nj wixui-rich-text" data-testid="richTextElement" data-motion-enter="done">
+                    <h2 class="font_2 wixui-rich-text__text" style="line-height:0.9em; font-size:90px;"><span class="color_11 wixui-rich-text__text"><span style="letter-spacing:0em;" class="wixui-rich-text__text">SHOP YOUR TEAM’S MUST-HAVES</span></span></h2>
+                  </div>
+                  <div id="comp-l7sxk8cc" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l7sxk8cc wixui-rich-text" data-testid="richTextElement" data-motion-enter="done">
+                    <p class="font_7 wixui-rich-text__text" style="font-size:22px;"><span class="color_11 wixui-rich-text__text">Treat yourself today&nbsp;</span></p>
+                  </div>
+                  <div class="comp-l7oobmnx FubTgk" id="comp-l7oobmnx" aria-disabled="false" data-motion-enter="done"><a data-testid="linkElement" href="https://www.wix.com/demone2/champplace/category/all-products" target="_self" class="uDW_Qe wixui-button PlZyDq" aria-disabled="false"><span class="l7_2fn wixui-button__label">ORDER NOW</span></a></div>
+                  <section id="comp-l7oov393" class="comp-l7oov393 CohWsy wixui-column-strip">
+                    <div id="bgLayers_comp-l7oov393" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l7oov393" class="if7Vw2">
+                      <div data-testid="colorUnderlay" class="tcElKx i1tH8h"></div>
+                      <div id="bgMedia_comp-l7oov393" data-motion-part="BG_MEDIA comp-l7oov393" class="wG8dni"></div>
+                    </div>
+                    <div data-testid="columns" class="V5AUxf">
+                      <div id="comp-l7oov3c8" class="comp-l7oov3c8 YzqVVZ wixui-column-strip__column">
+                        <div id="bgLayers_comp-l7oov3c8" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l7oov3c8" class="MW5IWV">
+                          <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+                          <div id="bgMedia_comp-l7oov3c8" data-motion-part="BG_MEDIA comp-l7oov3c8" class="VgO9Yg">
+                            <wow-image id="img_comp-l7oov3c8" class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage" data-image-info="{&quot;containerId&quot;:&quot;comp-l7oov3c8&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:980,&quot;targetHeight&quot;:391,&quot;isLQIP&quot;:true,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:1921,&quot;height&quot;:396,&quot;uri&quot;:&quot;c837a6_f95e02f631e4450280e96a1a424d2882~mv2.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-motion-part="BG_IMG comp-l7oov3c8" data-bg-effect-name="" data-has-ssr-src="true"><img src="https://static.wixstatic.com/media/c837a6_f95e02f631e4450280e96a1a424d2882~mv2.png/v1/fill/w_1191,h_396,al_c,q_90,enc_avif,quality_auto/c837a6_f95e02f631e4450280e96a1a424d2882~mv2.png" alt="" width="980" height="391" style="width: 1176px; height: 391px; object-fit: cover; object-position: 50% 50%;" data-ssr-src-done="true" fetchpriority="high"></wow-image>
+                          </div>
+                        </div>
+                        <div data-mesh-id="comp-l7oov3c8inlineContent" data-testid="inline-content" class="">
+                          <div data-mesh-id="comp-l7oov3c8inlineContent-gridContainer" data-testid="mesh-container-content"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <div data-mesh-id="comp-l7nouowkinlineContent-wedge-5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div id="comp-l7spo2ur" class="Vd6aQZ ignore-focus comp-l7spo2ur" tabindex="-1" role="region" aria-label="contact">
+          <div id="contact"></div><span class="mHZSwn">contact</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer secton-->
+  <footer id="SITE_FOOTER" class="AT7o0U SITE_FOOTER wixui-footer" tabindex="-1">
+    <div class="lvxhkV"></div>
+    <div class="cKxVkc">
+      <div class="vlM3HR"></div>
+      <div class="VrZrC0">
+        <div data-mesh-id="SITE_FOOTERinlineContent" data-testid="inline-content" class="">
+          <div data-mesh-id="SITE_FOOTERinlineContent-gridContainer" data-testid="mesh-container-content">
+            <section id="comp-l7oopqur" class="comp-l7oopqur CohWsy wixui-column-strip">
+              <div id="bgLayers_comp-l7oopqur" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l7oopqur" class="if7Vw2">
+                <div data-testid="colorUnderlay" class="tcElKx i1tH8h"></div>
+                <div id="bgMedia_comp-l7oopqur" data-motion-part="BG_MEDIA comp-l7oopqur" class="wG8dni"></div>
+              </div>
+              <div data-testid="columns" class="V5AUxf">
+                <div id="comp-l7oopqw5" class="comp-l7oopqw5 YzqVVZ wixui-column-strip__column">
+                  <div id="bgLayers_comp-l7oopqw5" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l7oopqw5" class="MW5IWV">
+                    <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+                    <div id="bgMedia_comp-l7oopqw5" data-motion-part="BG_MEDIA comp-l7oopqw5" class="VgO9Yg"></div>
+                  </div>
+                  <div data-mesh-id="comp-l7oopqw5inlineContent" data-testid="inline-content" class="">
+                    <div data-mesh-id="comp-l7oopqw5inlineContent-gridContainer" data-testid="mesh-container-content">
+                      <div id="comp-l7opg57h" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l7opg57h wixui-rich-text" data-testid="richTextElement">
+                        <p class="font_3 wixui-rich-text__text" style="font-size:50px;"><span class="color_11 wixui-rich-text__text"><a href="https://www.wix.com/demone2/champplace" target="_self" class="wixui-rich-text__text">ChampPlace.</a></span></p>
+                      </div>
+                      <section id="comp-l7opcmxm" class="comp-l7opcmxm CohWsy wixui-column-strip">
+                        <div id="bgLayers_comp-l7opcmxm" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l7opcmxm" class="if7Vw2">
+                          <div data-testid="colorUnderlay" class="tcElKx i1tH8h"></div>
+                          <div id="bgMedia_comp-l7opcmxm" data-motion-part="BG_MEDIA comp-l7opcmxm" class="wG8dni"></div>
+                        </div>
+                        <div data-testid="columns" class="V5AUxf">
+                          <div id="comp-l7ope1vr" class="comp-l7ope1vr YzqVVZ wixui-column-strip__column">
+                            <div id="bgLayers_comp-l7ope1vr" data-hook="bgLayers" data-motion-part="BG_LAYER comp-l7ope1vr" class="MW5IWV">
+                              <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+                              <div id="bgMedia_comp-l7ope1vr" data-motion-part="BG_MEDIA comp-l7ope1vr" class="VgO9Yg"></div>
+                            </div>
+                            <div data-mesh-id="comp-l7ope1vrinlineContent" data-testid="inline-content" class="">
+                              <div data-mesh-id="comp-l7ope1vrinlineContent-gridContainer" data-testid="mesh-container-content">
+                                <div id="comp-l7opjvfy" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l7opjvfy wixui-rich-text" data-testid="richTextElement">
+                                  <p class="font_6 wixui-rich-text__text" style="font-size:25px;"><span class="color_11 wixui-rich-text__text">SUBSCRIBE</span></p>
+                                </div>
+                                <div id="comp-l7szigye" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l7szigye wixui-rich-text" data-testid="richTextElement">
+                                  <p class="font_8 wixui-rich-text__text" style="font-size:15px;"><span class="color_11 wixui-rich-text__text">Subscribe to our newsletter and be among the first to hear about new arrivals and special offers.</span></p>
+                                </div>
+                                <div id="comp-m1xixtbt" class="TWFxr5 ">
+                                  <div class="comp-m1xixtbt">
+                                    <div data-hook="tpa-components-provider" style="--wix-color-29: var(--wix-color-3); --wix-color-37: var(--wix-color-5); --wix-color-38: var(--wix-color-8); --wix-color-39: var(--wix-color-8); --wix-color-40: var(--wix-color-1); --wix-color-41: var(--wix-color-8); --wix-color-42: var(--wix-color-8); --wix-color-43: var(--wix-color-1); --wix-color-44: var(--wix-color-3); --wix-color-45: var(--wix-color-3); --wix-color-46: var(--wix-color-1); --wix-color-47: var(--wix-color-1); --wix-color-48: var(--wix-color-8); --wix-color-49: var(--wix-color-8); --wix-color-50: var(--wix-color-1); --wix-color-51: var(--wix-color-8); --wix-color-52: var(--wix-color-8); --wix-color-53: var(--wix-color-1); --wix-color-54: var(--wix-color-3); --wix-color-55: var(--wix-color-3);">
+                                      <div class="skymIZO" data-hook="Form-wrapper" style="--index667083180-shadowXOffset: 0px; --index667083180-shadowYOffset: 0px; overflow: visible;">
+                                        <div data-hook="tpa-components-provider" style="--wix-color-29: var(--wix-color-3); --wix-color-37: var(--wix-color-5); --wix-color-38: var(--wix-color-8); --wix-color-39: var(--wix-color-8); --wix-color-40: var(--wix-color-1); --wix-color-41: var(--wix-color-8); --wix-color-42: var(--wix-color-8); --wix-color-43: var(--wix-color-1); --wix-color-44: var(--wix-color-3); --wix-color-45: var(--wix-color-3); --wix-color-46: var(--wix-color-1); --wix-color-47: var(--wix-color-1); --wix-color-48: var(--wix-color-8); --wix-color-49: var(--wix-color-8); --wix-color-50: var(--wix-color-1); --wix-color-51: var(--wix-color-8); --wix-color-52: var(--wix-color-8); --wix-color-53: var(--wix-color-1); --wix-color-54: var(--wix-color-3); --wix-color-55: var(--wix-color-3);">
+                                          <form aria-label="Subscription" id="form-60f33308-6402-491d-95ec-405fb1bc368b" data-hook="form-60f33308-6402-491d-95ec-405fb1bc368b" class="">
+                                            <fieldset>
+                                              <div data-hook="form-root">
+                                                <div class="AxNTep s_16xK5" dir="">
+                                                  <div class="FNgTtb shck6mK" style="grid-template-columns: repeat(12, 1fr); grid-auto-rows: minmax(min-content, max-content) 1fr;">
+                                                    <div class="QPXBDg" style="grid-area: 1 / 1 / span 1 / span 12;"><label id="form-field-label-f90a7a01-bc9d-4cfb-9460-52f251c25a88-:r0:" for="form-field-input-f90a7a01-bc9d-4cfb-9460-52f251c25a88-:r0:" class="sR4wxBi sBX99DA">Email<span aria-hidden="true" class="sghutmd">*</span></label></div>
+                                                    <div data-hook="form-field-email_28fd" data-field-type="CONTACTS_EMAIL" style="grid-area: 2 / 1 / span 1 / span 12;">
+                                                      <div class="sX2_row o__7za_uI---theme-3-box o__7za_uI--newErrorMessage sLCct_2 svW2vmA">
+                                                        <div class="sOdzim9 ow9ohcd---errorAppearance-8-TextOnly sQEDODH">
+                                                          <div class="sTpJn_g sOsqGWM o__7za_uI---theme-3-box" data-theme="box" data-success="false" data-error="false" data-empty-state="true"><input id="form-field-input-f90a7a01-bc9d-4cfb-9460-52f251c25a88-:r0:" data-theme="box" data-success="false" data-error="false" data-empty-state="true" aria-invalid="false" required="" aria-label="Email" type="email" class="sPNNQXK  has-custom-focus" value=""></div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="sA8zHT2 sHOv33N" data-hook="field-error-email_28fd" aria-live="polite"></div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="FNgTtb shck6mK" style="grid-template-columns: repeat(12, 1fr); grid-auto-rows: minmax(min-content, max-content) 1fr;">
+                                                    <div class="QPXBDg" style="grid-area: 1 / 1 / span 1 / span 12;"></div>
+                                                    <div data-hook="form-field-form_field_2503" data-field-type="CONTACTS_SUBSCRIBE" style="grid-area: 2 / 1 / span 1 / span 12;">
+                                                      <div>
+                                                        <div class="sOdzim9 ow9ohcd---errorAppearance-8-TextOnly scd5i9v o__2XWBWi--newErrorMessage qrLgNy sZ3b8jH" data-hook="checkbox-wrapper">
+                                                          <div class="szFEw_3" data-hook="checkbox-wrapper" data-disabled="false" data-error="false" data-indeterminate="false" data-checked="false" data-focused="false"><label class="sOhdzoR skYctQl o__2XWBWi---verticalAlignment-6-center" data-hook="checkbox-core"><input type="checkbox" class="sq2hkZ5" tabindex="0" id="checkbox-5" required="" aria-invalid="false"><span class="sUi0F7R"><span class="sksMbyd" data-hook="icon-wrapper"></span></span>
+                                                              <div class="sS08TSg">
+                                                                <div data-hook="label-wrapper" class="s__6UOQK6">
+                                                                  <div class="Usc5t3 UCjwUe">
+                                                                    <div class="TQzjn" dir="ltr" data-id="content-viewer" style="--ricos-text-color: rgb(var(--wix-forms-formParagraphColor)); --ricos-text-color-tuple: var(--wix-forms-formParagraphColor); --ricos-action-color: rgb(var(--wix-forms-formLinkColor)); --ricos-action-color-tuple: var(--wix-forms-formLinkColor); --ricos-background-color: rgb(var(--wix-forms-formInputBackgroundColor)); --ricos-background-color-tuple: var(--wix-forms-formInputBackgroundColor); --ricos-fallback-color: rgb(0, 0, 0); --ricos-fallback-color-tuple: 0, 0, 0; --ricos-settings-action-color: rgb(0, 0, 0); --ricos-settings-action-color-tuple: 0, 0, 0; --ricos-action-color-fallback: rgb(0, 0, 0); --ricos-action-color-fallback-tuple: 0, 0, 0; --ricos-custom-p-font-weight: normal; --ricos-custom-p-font-style: normal; --ricos-custom-p-line-height: 1.5; --ricos-custom-p-font-size: var(--wix-forms-formInputValueFont-size, 16px); --ricos-custom-p-font-family: var(--wix-forms-formInputValueFont-family); --ricos-custom-p-color: rgb(var(--wix-forms-formInputValueColor, 0,0,0)); --ricos-custom-h1-font-weight: normal; --ricos-custom-h1-font-style: normal; --ricos-custom-h1-line-height: 1.5; --ricos-custom-h1-font-size: 40px; --ricos-custom-h2-font-weight: normal; --ricos-custom-h2-font-style: normal; --ricos-custom-h2-line-height: 1.5; --ricos-custom-h2-font-size: 28px; --ricos-custom-h3-font-weight: normal; --ricos-custom-h3-font-style: normal; --ricos-custom-h3-line-height: 1.5; --ricos-custom-h3-font-size: 24px; --ricos-custom-h4-font-weight: normal; --ricos-custom-h4-font-style: normal; --ricos-custom-h4-line-height: 1.5; --ricos-custom-h4-font-size: 20px; --ricos-custom-h5-font-weight: normal; --ricos-custom-h5-font-style: normal; --ricos-custom-h5-line-height: 1.5; --ricos-custom-h5-font-size: 18px; --ricos-custom-h6-font-weight: normal; --ricos-custom-h6-font-style: normal; --ricos-custom-h6-line-height: 1.5; --ricos-custom-h6-font-size: 16px; --ricos-custom-quote-line-height: 1.5; --ricos-custom-quote-font-size: 18px; --ricos-custom-code-block-line-height: 1.5; --ricos-breakout-normal-padding-start: 0; --ricos-breakout-normal-padding-end: 0; --ricos-breakout-full-width-padding-start: 0; --ricos-breakout-full-width-padding-end: 0;">
+                                                                      <div class="ULONp">
+                                                                        <div class="VWU4s">
+                                                                          <p class="A6brr -uA7G Iuy1K dMK5v" dir="auto" id="viewer-tstwm107"><span class="gaWoH"><span>Yes, subscribe me to your newsletter.</span><span aria-hidden="true" class="Mn9B2d">*</span></span></p>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </label></div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="FNgTtb shck6mK" style="grid-template-columns: repeat(12, 1fr); grid-auto-rows: minmax(min-content, max-content) 1fr;">
+                                                    <div class="QPXBDg" style="grid-area: 1 / 1 / span 1 / span 5;"></div>
+                                                    <div data-hook="form-field-46a62972-fb0c-4b61-6b1a-5267e3c9d151" data-field-type="SUBMIT_BUTTON" style="grid-area: 2 / 1 / span 1 / span 5;">
+                                                      <div class=""><button data-fullwidth="false" data-mobile="false" data-hook="submit-button" class="s__5hoq_Q sukSZ1s soxMpI7 oMSqves---paddingMode-16-explicitPaddings oMSqves--wrapContent oMSqves---hoverStyle-11-colorChange sHwAMN7 oJLepvw--upgrade seO8obq sJXm1x1" aria-live="assertive" type="button" tabindex="0" aria-disabled="false"><span class="sJ_i5tM">Submit</span></button></div>
+                                                      <div style="transition: opacity 350ms ease-in-out; opacity: 0;"></div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div role="region" aria-live="polite">
+                                                  <div style="transition: opacity 350ms ease-in-out; opacity: 0;"></div>
+                                                </div>
+                                              </div>
+                                            </fieldset>
+                                          </form>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div id="comp-l8am0ezp" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l8am0ezp wixui-rich-text" data-testid="richTextElement">
+                                  <p class="font_6 wixui-rich-text__text" style="font-size:25px;"><span class="color_11 wixui-rich-text__text">ADDRESS</span></p>
+                                </div>
+                                <div id="comp-l7oqhydr" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l7oqhydr wixui-rich-text" data-testid="richTextElement">
+                                  <p class="font_8 wixui-rich-text__text" style="font-size:15px;"><span class="color_11 wixui-rich-text__text">500 Terry Francine Street<br class="wixui-rich-text__text">
+                                      San Francisco, CA 94158<br class="wixui-rich-text__text">
+                                      123-456-7890<br class="wixui-rich-text__text">
+                                      info@mysite.com</span></p>
+                                </div>
+                                <div id="comp-l7rq206f" class="comp-l7rq206f WzbAF8">
+                                  <ul class="mpGTIt" aria-label="Social Bar">
+                                    <li id="dataItem-l7swwlkk-comp-l7rq206f" class="O6KwRn"><a data-testid="linkElement" href="https://www.twitter.com/wix" target="_blank" rel="noreferrer noopener" class="oRtuWN" aria-label="Twitter     ">
+                                        <wow-image id="img_0_comp-l7rq206f" class="HlRz5e YaS0jR" data-image-info="{&quot;containerId&quot;:&quot;dataItem-l7swwlkk-comp-l7rq206f&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:201,&quot;height&quot;:201,&quot;uri&quot;:&quot;11062b_2533d1d4c31245408717d17b946bc8d8~mv2.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-motion-part="BG_IMG dataItem-l7swwlkk-comp-l7rq206f" data-bg-effect-name="" data-has-ssr-src="" style="--wix-img-max-width: max(201px, 100%);"><img alt="Twitter     " data-ssr-src-done="true" fetchpriority="high" src="https://static.wixstatic.com/media/11062b_2533d1d4c31245408717d17b946bc8d8~mv2.png/v1/fill/w_38,h_38,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2533d1d4c31245408717d17b946bc8d8~mv2.png" style="width: 25px; height: 25px; object-fit: cover;"></wow-image>
+                                      </a></li>
+                                    <li id="dataItem-l7spi2ig-comp-l7rq206f" class="O6KwRn"><a data-testid="linkElement" href="https://www.facebook.com/wix" target="_blank" rel="noreferrer noopener" class="oRtuWN" aria-label="Facebook">
+                                        <wow-image id="img_1_comp-l7rq206f" class="HlRz5e YaS0jR" data-image-info="{&quot;containerId&quot;:&quot;dataItem-l7spi2ig-comp-l7rq206f&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:201,&quot;height&quot;:200,&quot;uri&quot;:&quot;11062b_f4e3e7f537ff4762a1914aa14e3e36b9~mv2.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-motion-part="BG_IMG dataItem-l7spi2ig-comp-l7rq206f" data-bg-effect-name="" data-has-ssr-src="" style="--wix-img-max-width: max(201px, 100%);"><img alt="Facebook" data-ssr-src-done="true" fetchpriority="high" src="https://static.wixstatic.com/media/11062b_f4e3e7f537ff4762a1914aa14e3e36b9~mv2.png/v1/fill/w_38,h_38,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_f4e3e7f537ff4762a1914aa14e3e36b9~mv2.png" style="width: 25px; height: 25px; object-fit: cover;"></wow-image>
+                                      </a></li>
+                                    <li id="dataItem-l7spi2ih-comp-l7rq206f" class="O6KwRn"><a data-testid="linkElement" href="https://www.instagram.com/wix" target="_blank" rel="noreferrer noopener" class="oRtuWN" aria-label="Instagram   ">
+                                        <wow-image id="img_2_comp-l7rq206f" class="HlRz5e YaS0jR" data-image-info="{&quot;containerId&quot;:&quot;dataItem-l7spi2ih-comp-l7rq206f&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;encoding&quot;:&quot;AVIF&quot;,&quot;imageData&quot;:{&quot;width&quot;:201,&quot;height&quot;:201,&quot;uri&quot;:&quot;11062b_603340b7bcb14e7785c7b65b233cd9f9~mv2.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-motion-part="BG_IMG dataItem-l7spi2ih-comp-l7rq206f" data-bg-effect-name="" data-has-ssr-src="" style="--wix-img-max-width: max(201px, 100%);"><img alt="Instagram   " data-ssr-src-done="true" fetchpriority="high" src="https://static.wixstatic.com/media/11062b_603340b7bcb14e7785c7b65b233cd9f9~mv2.png/v1/fill/w_38,h_38,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_603340b7bcb14e7785c7b65b233cd9f9~mv2.png" style="width: 25px; height: 25px; object-fit: cover;"></wow-image>
+                                      </a></li>
+                                  </ul>
+                                </div>
+                                <div id="comp-l7opk6ze" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l7opk6ze wixui-rich-text" data-testid="richTextElement">
+                                  <p class="font_6 wixui-rich-text__text" style="font-size:25px;"><span class="color_11 wixui-rich-text__text">MENU</span></p>
+                                </div>
+                                <div id="comp-l7opair8" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l7opair8 wixui-rich-text" data-testid="richTextElement">
+                                  <p class="font_8 wixui-rich-text__text" style="line-height:1.7em; font-size:15px;"><span class="color_11 wixui-rich-text__text"><a href="https://www.wix.com/demone2/champplace/category/all-products" target="_self" class="wixui-rich-text__text">Shop</a><br class="wixui-rich-text__text">
+                                      <a href="https://www.wix.com/demone2/champplace/category/sale" target="_self" class="wixui-rich-text__text">Sale</a><br class="wixui-rich-text__text">
+                                      <a href="https://www.wix.com/demone2/champplace/category/hats" target="_self" class="wixui-rich-text__text">Hats</a><br class="wixui-rich-text__text">
+                                      <a href="https://www.wix.com/demone2/champplace/category/jerseys" target="_self" class="wixui-rich-text__text">Jerseys</a><br class="wixui-rich-text__text">
+                                      <a href="https://www.wix.com/demone2/champplace/category/soccer-balls" target="_self" class="wixui-rich-text__text">Soccer Balls</a><br class="wixui-rich-text__text">
+                                      <a href="https://www.wix.com/demone2/champplace/faq" target="_self" class="wixui-rich-text__text">FAQ</a><br class="wixui-rich-text__text">
+                                      ​<a href="https://www.wix.com/demone2/champplace/terms-and-conditions" target="_self" class="wixui-rich-text__text">Terms &amp; Conditions</a><br class="wixui-rich-text__text">
+                                      <a href="https://www.wix.com/demone2/champplace/privacy-policy" target="_self" class="wixui-rich-text__text">Privacy Policy</a><br class="wixui-rich-text__text">
+                                      <a href="https://www.wix.com/demone2/champplace/shipping-policy" target="_self" class="wixui-rich-text__text">Shipping Policy</a><br class="wixui-rich-text__text">
+                                      <a href="https://www.wix.com/demone2/champplace/refund-policy" target="_self" class="wixui-rich-text__text">Refund Policy</a><br class="wixui-rich-text__text">
+                                      <a href="https://www.wix.com/demone2/champplace/cookie-policy" target="_self" class="wixui-rich-text__text">Cookie Policy</a></span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <div id="comp-l7opbvhy" class="comp-l7opbvhy aVng1S wixui-horizontal-line"></div>
+                      <div id="comp-l7oplmbo" class="HcOXKn c9GqVL QxJLC3 lq2cno YQcXTT comp-l7oplmbo wixui-rich-text" data-testid="richTextElement">
+                        <p class="font_9 wixui-rich-text__text" style="font-size:14px;"><span class="color_36 wixui-rich-text__text">© 2035 by ChampPlace. Powered and secured by&nbsp;<span style="text-decoration:underline;" class="wixui-rich-text__text"><a href="http://wix.com/?utm_campaign=vir_created_with" target="_blank" rel="noreferrer noopener" class="wixui-rich-text__text">Wix</a></span></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>

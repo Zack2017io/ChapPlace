@@ -87,3 +87,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
   console.log("Dropdown script initialized successfully.");
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  let carousel = document.querySelector("Demo");
+  let carouselInstance = new bootstrap.Carousel(carousel, {
+    interval: 2000,  // Auto-slide every 2 seconds
+    wrap: true       // Infinite looping
+  });
+
+  let items = document.querySelectorAll("Demo .carousel-item");
+
+  items.forEach((el) => {
+    const minPerSlide = 4;
+    let next = el.nextElementSibling;
+    for (let i = 1; i < minPerSlide; i++) {
+      if (!next) {
+        next = items[0]; // Loop back to first item
+      }
+      let cloneChild = next.firstElementChild.cloneNode(true);
+      el.appendChild(cloneChild.children[0]);
+      next = next.nextElementSibling;
+    }
+  });
+});
+

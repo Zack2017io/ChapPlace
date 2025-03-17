@@ -1,56 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const sliderWrapper = document.getElementById("productsGrid");
-  const prevButton = document.getElementById("prevBtn");
-  const nextButton = document.getElementById("nextBtn");
-
-  const products = [...sliderWrapper.children]; // Convert NodeList to Array
-  const productWidth = products[0].offsetWidth + 20; // Product width including margin
-  const visibleProducts = 4; // Number of products visible at a time
-
-  // Duplicate first and last few items for infinite looping
-  for (let i = 0; i < visibleProducts; i++) {
-      let cloneFirst = products[i].cloneNode(true);
-      let cloneLast = products[products.length - 1 - i].cloneNode(true);
-      sliderWrapper.appendChild(cloneFirst);
-      sliderWrapper.insertBefore(cloneLast, sliderWrapper.firstChild);
-  }
-
-  let scrollAmount = productWidth * visibleProducts;
-  sliderWrapper.style.transform = `translateX(-${scrollAmount}px)`; // Initial positioning
-
-  function slide(direction) {
-      if (direction === "next") {
-          scrollAmount += productWidth;
-      } else {
-          scrollAmount -= productWidth;
-      }
-
-      sliderWrapper.style.transition = "transform 0.5s ease-in-out";
-      sliderWrapper.style.transform = `translateX(-${scrollAmount}px)`;
-
-      // Reset position when reaching cloned items (infinite loop effect)
-      setTimeout(() => {
-          if (scrollAmount >= productWidth * (products.length + visibleProducts)) {
-              sliderWrapper.style.transition = "none";
-              scrollAmount = productWidth * visibleProducts;
-              sliderWrapper.style.transform = `translateX(-${scrollAmount}px)`;
-          } else if (scrollAmount <= 0) {
-              sliderWrapper.style.transition = "none";
-              scrollAmount = productWidth * products.length;
-              sliderWrapper.style.transform = `translateX(-${scrollAmount}px)`;
-          }
-      }, 500);
-  }
-
-  nextButton.addEventListener("click", () => slide("next"));
-  prevButton.addEventListener("click", () => slide("prev"));
-});
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
   const inputElement = document.getElementById('search-input');
   const parentElement = document.querySelector('.input-wrapper');
@@ -88,28 +35,53 @@ document.addEventListener('DOMContentLoaded', function () {
   console.log("Dropdown script initialized successfully.");
 });
 
+const categoryTitle = document.querySelector('.category-title');
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  let carousel = document.querySelector("Demo");
-  let carouselInstance = new bootstrap.Carousel(carousel, {
-    interval: 2000,  // Auto-slide every 2 seconds
-    wrap: true       // Infinite looping
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const carousel = document.querySelector('.carousel');
+  const leftArrow = document.getElementById('left');
+  const rightArrow = document.getElementById('right');
+  const cardWidth = 400;
+  let scrollAmount = 0;
+  
+ 
+
+  rightArrow.addEventListener('click', function() {
+    if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth) {
+      scrollAmount = 0;
+    } else {
+      scrollAmount += cardWidth;
+    }
+    carousel.scrollTo({
+      top: 0,
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
   });
 
-  let items = document.querySelectorAll("Demo .carousel-item");
-
-  items.forEach((el) => {
-    const minPerSlide = 4;
-    let next = el.nextElementSibling;
-    for (let i = 1; i < minPerSlide; i++) {
-      if (!next) {
-        next = items[0]; // Loop back to first item
-      }
-      let cloneChild = next.firstElementChild.cloneNode(true);
-      el.appendChild(cloneChild.children[0]);
-      next = next.nextElementSibling;
+  leftArrow.addEventListener('click', function() {
+    if (scrollAmount <= 0) {
+      scrollAmount = carousel.scrollWidth - carousel.clientWidth;
+    } else {
+      scrollAmount -= cardWidth;
     }
+    carousel.scrollTo({
+      top: 0,
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', function() {
+    navLinks.classList.toggle('show');
   });
 });
 

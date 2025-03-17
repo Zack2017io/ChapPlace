@@ -6,16 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sports Store</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-  <script> src="script.js"</script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="script.js" defer></script>
 
 </head>
 
@@ -67,7 +65,7 @@
                       width="73" 
                       height="55">
                     <div class="product-info">
-                      <p> <span class="product-heading"> I'm a product </span> <br> Product description...  </p>
+                      <p> <span class="product-heading"> I'm a product </span> <br> I'm a product descri...  </p>
                     </div>
                    </div>
                   </a>
@@ -82,8 +80,7 @@
                       width="73" 
                       height="55">
                     <div class="product-info">
-                      <h3>I'm a product</h3>
-                      <p>Product description...</p>
+                      <p> <span class="product-heading"> I'm a product </span> <br> I'm a product descri...  </p>
                     </div>
                     </div>
                   </a>
@@ -98,8 +95,7 @@
                       width="73" 
                       height="55">
                     <div class="product-info">
-                      <h3>I'm a product</h3>
-                      <p>Product description...</p>
+                      <p> <span class="product-heading"> I'm a product </span> <br> I'm a product descri...  </p>
                     </div>
                    </div>
                   </a>
@@ -114,8 +110,7 @@
                       width="73" 
                       height="55">
                     <div class="product-info">
-                      <h3>I'm a product</h3>
-                      <p>Product description...</p>
+                      <p> <span class="product-heading"> I'm a product </span> <br> I'm a product descri...  </p>
                     </div>
                     </div>
                   </a>
@@ -137,7 +132,11 @@
         </li>
         <li>
           <div class="cart-icon">
-            <i class="fa-thin fa-bag-shopping"></i>
+            <svg class="shopping-bag-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="30" width="60" height="50" stroke="#A0522D" stroke-width="3" fill="none" rx="5"/>
+              <path d="M 30 30 C 30 20, 70 20, 70 30" stroke="#A0522D" stroke-width="3" fill="none"/>
+              <text x="50" y="55" text-anchor="middle" dominant-baseline="central" font-size="25" fill="#A0522D">0</text>
+            </svg>
           </div>
         </li>
       </ul>
@@ -228,90 +227,95 @@
     
     
 
-  <!--Product show case-->
-  <section class="product-showcase">
-    <div class="product-gallery">
-      <h2 class="gallery-heading">BEST <br> SELLERS</h2>
-  
-      <div class="products-grid" id="productsGrid">
-        <div id="demo" class="carousel slide">
-  
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row flex-nowrap w-100"> 
-                <div class="col-md-3">
-                  <img src="https://static.wixstatic.com/media/84770f_86ce5a8d3f8a45669f3ffbc87144bf42~mv2.jpg/v1/fill/w_399,h_399,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_86ce5a8d3f8a45669f3ffbc87144bf42~mv2.jpg" alt="Blue cap" class="d-block w-100">
-                  <div class="best-seller-badge">Best Seller</div>
-                  <div class="quick-view">Quick View</div>
-                  <div class="product-info">
-                    <div class="product-title">I'm a product</div>
-                    <div class="product-price">$120.00</div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <img src="https://static.wixstatic.com/media/c837a6_49c02cf9bcda49e7a194e447a886dcac~mv2.jpg/v1/fill/w_399,h_399,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_49c02cf9bcda49e7a194e447a886dcac~mv2.jpg" alt="Jersey" class="d-block w-100">
-                  <div class="best-seller-badge">Best Seller</div>
-                  <div class="quick-view">Quick View</div>
-                  <div class="product-info">
-                    <div class="product-title">I'm a product</div>
-                    <div class="product-price">$120.00</div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <img src="https://static.wixstatic.com/media/c837a6_6068369882eb4a84baafb7309c639c13~mv2.jpg/v1/fill/w_399,h_399,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_6068369882eb4a84baafb7309c639c13~mv2.jpg" alt="Golden Ball" class="d-block w-100">
-                  <div class="best-seller-badge">Best Seller</div>
-                  <div class="quick-view">Quick View</div>
-                  <div class="product-info">
-                    <div class="product-title">I'm a product</div>
-                    <div class="product-price">$120.00</div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <img src="https://static.wixstatic.com/media/84770f_19130b60829d46389db79db783c50db4~mv2.jpg/v1/fill/w_399,h_399,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_19130b60829d46389db79db783c50db4~mv2.jpg" alt="Black cap" class="d-block w-100">
-                  <div class="best-seller-badge">Best Seller</div>
-                  <div class="quick-view">Quick View</div>
-                  <div class="product-info">
-                    <div class="product-title">I'm a product</div>
-                    <div class="product-price">$120.00</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row flex-nowrap">
-                <div class="col-md-3">
-                  <img src="https://static.wixstatic.com/media/c837a6_bee753682b654d69ae5ceaad35370ffb~mv2.jpg/v1/fill/w_399,h_399,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_bee753682b654d69ae5ceaad35370ffb~mv2.jpg" alt="Ball" class="d-block w-100">
-                  <div class="best-seller-badge">Best Seller</div>
-                  <div class="quick-view">Quick View</div>
-                  <div class="product-info">
-                    <div class="product-title">I'm a product</div>
-                    <div class="product-price">$120.00</div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <img src="https://static.wixstatic.com/media/c837a6_f5da0944160b4d849d8c8ec90b1adfe6~mv2.jpg/v1/fill/w_399,h_399,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_f5da0944160b4d849d8c8ec90b1adfe6~mv2.jpg" alt="Jersey" class="d-block w-100">
-                  <div class="best-seller-badge">Best Seller</div>
-                  <div class="quick-view">Quick View</div>
-                  <div class="product-info">
-                    <div class="product-title">I'm a product</div>
-                    <div class="product-price">$120.00</div>
-                  </div>
-                </div>
-                </div>
-            </div>
-          </div>
-  
-          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </div>
+               <!--Product show case -->
+               <section class="product-showcase">
+                <div class="product-gallery">
+                    <h2 class="gallery-heading">BEST <br> SELLERS</h2>
+                <!--Product Items Wrapper -->
+<div class="wrapper">
+  <i id="left" class="fas fa-solid fa-angle-left"></i>
+  <div class="carousel">
+    <div class="card">
+      <div class="img">
+        <img src="https://static.wixstatic.com/media/84770f_86ce5a8d3f8a45669f3ffbc87144bf42~mv2.jpg" draggable="false">
+        <div class="best-seller-badge">Best Seller</div>
+        <div class="quick-view">Quick View</div>
+       </div>
+        <div class="product-info2">
+         <div class="product-title">I'm a product</div>
+         <div class="product-price">$120.00</div>
+       </div>
+    </div>
+
+    <div class="card">
+      <div class="img">
+        <img src="https://static.wixstatic.com/media/c837a6_49c02cf9bcda49e7a194e447a886dcac~mv2.jpg" draggable="false">
+      
+      <div class="best-seller-badge">Best Seller</div>
+      <div class="quick-view">Quick View</div>
+    </div>
+      <div class="product-info2">
+        <div class="product-title">I'm a product</div>
+        <div class="product-price">$120.00</div>
       </div>
     </div>
-  </section>
- 
+
+    <div class="card">
+      <div class="img">
+        <img src="https://static.wixstatic.com/media/c837a6_6068369882eb4a84baafb7309c639c13~mv2.jpg" draggable="false">
+      
+      <div class="best-seller-badge">Best Seller</div>
+      <div class="quick-view">Quick View</div>
+    </div>
+      <div class="product-info2">
+        <div class="product-title">I'm a product</div>
+        <div class="product-price">$120.00</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img">
+        <img src="https://static.wixstatic.com/media/84770f_19130b60829d46389db79db783c50db4~mv2.jpg" draggable="false">
+      
+      <div class="best-seller-badge">Best Seller</div>
+      <div class="quick-view">Quick View</div>
+    </div>
+      <div class="product-info2">
+        <div class="product-title">I'm a product</div>
+        <div class="product-price">$120.00</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img">
+        <img src="https://static.wixstatic.com/media/c837a6_f5da0944160b4d849d8c8ec90b1adfe6~mv2.jpg" draggable="false">
+       <div class="best-seller-badge">Best Seller</div>
+       <div class="quick-view">Quick View</div>
+      </div>
+      <div class="product-info2">
+        <div class="product-title">I'm a product</div>
+        <div class="product-price">$120.00</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img">
+        <img src="https://static.wixstatic.com/media/c837a6_bee753682b654d69ae5ceaad35370ffb~mv2.jpg" draggable="false">
+      
+       <div class="best-seller-badge">Best Seller</div>
+       <div class="quick-view">Quick View</div>
+      </div>
+      <div class="product-info2">
+        <div class="product-title">I'm a product</div>
+        <div class="product-price">$120.00</div>
+      </div>
+    </div>
+  </div>
+  <i id="right" class="fas fa-solid fa-angle-right"></i>
+</div>
+
+                </div>
+            </section>  
 
   <!--Get your gear on section-->
   <section class="promo-section" aria-label="Special offers">
@@ -326,7 +330,7 @@
         <div class="heading-container">
           <h1 class="heading-primary">Get Your<br>Gear On</h1>
           <p><span class="subheading-primary">Shop the latest jerseys</span></p>
-          <!-- Optional button -->
+          
           <button class="cta-button">don't miss out</button>
         </div>
       </div>
@@ -344,7 +348,7 @@
       <!-- Soccer Balls -->
       <article class="category-card">
         <a href="/soccer-balls" class="category-link" aria-label="Browse Soccer Balls">
-          <div class="image-container">
+          <div class="image-container2">
             <img src="https://static.wixstatic.com/media/c837a6_721ff3f4a5b6454685e81c4df42ca726~mv2.jpg"
                  alt="Professional soccer balls on field"
                  class="responsive-image"
@@ -359,7 +363,7 @@
       <!-- Jerseys -->
       <article class="category-card">
         <a href="/jerseys" class="category-link" aria-label="Browse Jerseys">
-          <div class="image-container">
+          <div class="image-container2">
             <img src="https://static.wixstatic.com/media/c837a6_bd235148c3ed4d14851cd357471866cf~mv2.jpg"
                  alt="Sports jerseys on display"
                  class="responsive-image"
@@ -374,7 +378,7 @@
       <!-- Hats -->
       <article class="category-card">
         <a href="#" class="category-link" aria-label="Browse Hats">
-          <div class="image-container">
+          <div class="image-container2">
             <img src="https://static.wixstatic.com/media/c837a6_9316b550525e46e98f262de4c59847b1~mv2.jpg"
                  alt="Collection of sports hats"
                  class="responsive-image"
@@ -426,7 +430,7 @@
       <!-- Newsletter Section -->
       <div class="footer-section2">
         <h3 class="footer-heading">SUBSCRIBE</h3>
-        <p class="footer-text">Get updates on new arrivals and special offers</p>
+        <p class="footer-text">Subscribe to our newsletter and be among the first <br>to hear about new arrivals and special offers.</p>
         
         <form class="newsletter-form" aria-label="Email subscription">
           <label for="email" class="visually-hidden">Email</label>
@@ -443,7 +447,7 @@
       </div>
   
       <!-- Contact Info -->
-      <div class="footer-section2">
+      <div class="footer-section3">
         <h3 class="footer-heading">ADDRESS</h3>
         <address class="contact-info">
           500 Terry Francine Street<br>

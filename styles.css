@@ -919,7 +919,7 @@ margin-top: -10px !important;
 
 
 
-/* Base styles and reset */
+/* Get your gear on section */
 
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -996,7 +996,6 @@ body {
   width: 50%;
   position: sticky;
   background-attachment: fixed;
-  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1011,7 +1010,6 @@ body {
   object-fit: cover;
   object-position: center;
   position: relative;
-  will-change: transform;
 }
 
 /* Heading styles */

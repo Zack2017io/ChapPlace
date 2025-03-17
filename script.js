@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   console.log("Dropdown script initialized successfully.");
 });
+//document.querySelectorAll('.card')[6].style.width = '300px'; // Third card
 
 const categoryTitle = document.querySelector('.category-title');
 
@@ -44,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const carousel = document.querySelector('.carousel');
   const leftArrow = document.getElementById('left');
   const rightArrow = document.getElementById('right');
-  const cardWidth = 400;
+  const cardWidth = 350;
   let scrollAmount = 0;
   
  
@@ -76,12 +77,5 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('.nav-links');
 
-  hamburger.addEventListener('click', function() {
-    navLinks.classList.toggle('show');
-  });
-});
 

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header>
+    
+    <nav class="navbar">
+      <div class="header-section">
+        <a href="#" target="_self" class="logo-name">ChampPlace.</a> 
+      </div>
+      <ul class="nav-links">
+        <li class="dropdown2">
+          <a href="#">Shop</a>
+          <ul class="dropdown-menu2">
+            <li><a href="#">Hats</a></li>
+            <li><a href="#">Jerseys</a></li>
+            <li><a href="#">Soccer Balls</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="search-dropdown">
+          <div class="search-container">
+            <form class="search-form" role="search" action="#">
+              <button class="input-wrapper" id="search-trigger" aria-label="Open search">
+                <input 
+                  type="search" 
+                  placeholder="Search..." 
+                  aria-label="Search products" 
+                  class="search-input" 
+                  id="search-input" 
+                  maxlength="100" 
+                  autocomplete="off">
+                <i class="fas fa-search"></i>
+              </button>
+              <ul class="search-suggestions">
+                <li class="suggestion-category">
+                  <h3>Trending Products</h3>
+                </li>
+                <li class="suggestion-item" role="option">
+                  <a href="#" class="product-card">
+                    <div class="product-card-inner"> <img 
+                      class="product-image" 
+                      alt="I'm a product" 
+                      src="https://static.wixstatic.com/media/c837a6_49c02cf9bcda49e7a194e447a886dcac~mv2.jpg" 
+                      loading="lazy" 
+                      width="73" 
+                      height="55">
+                    <div class="product-info">
+                      <p> <span class="product-heading"> I'm a product </span> <br> I'm a product descri...  </p>
+                    </div>
+                   </div>
+                  </a>
+                </li>
+                <li class="suggestion-item" role="option">
+                  <a href="#" class="product-card">
+                    <div class="product-card-inner"> <img 
+                      class="product-image" 
+                      alt="I'm a product" 
+                      src="https://static.wixstatic.com/media/c837a6_6068369882eb4a84baafb7309c639c13~mv2.jpg/v1/fill/w_63,h_83,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/I'm%20a%20product.jpg" 
+                      loading="lazy" 
+                      width="73" 
+                      height="55">
+                    <div class="product-info">
+                      <p> <span class="product-heading"> I'm a product </span> <br> I'm a product descri...  </p>
+                    </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="suggestion-item" role="option">
+                  <a href="#" class="product-card">
+                    <div class="product-card-inner"> <img 
+                      class="product-image" 
+                      alt="I'm a product" 
+                      src="https://static.wixstatic.com/media/84770f_86ce5a8d3f8a45669f3ffbc87144bf42~mv2.jpg/v1/fill/w_63,h_83,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/I'm%20a%20product.jpg" 
+                      loading="lazy" 
+                      width="73" 
+                      height="55">
+                    <div class="product-info">
+                      <p> <span class="product-heading"> I'm a product </span> <br> I'm a product descri...  </p>
+                    </div>
+                   </div>
+                  </a>
+                </li>
+                <li class="suggestion-item" role="option">
+                  <a href="#" class="product-card">
+                    <div class="product-card-inner"> <img 
+                      class="product-image" 
+                      alt="I'm a product" 
+                      src="https://static.wixstatic.com/media/c837a6_d0c7b272c3404b03a77d639ac4bbf7c4~mv2.jpg/v1/fill/w_63,h_83,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/I'm%20a%20product.jpg" 
+                      loading="lazy" 
+                      width="73" 
+                      height="55">
+                    <div class="product-info">
+                      <p> <span class="product-heading"> I'm a product </span> <br> I'm a product descri...  </p>
+                    </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </li>
+    
+        <li>
+          <div class="auth-cart-container">
+            <button class="auth-button" aria-label="Log in">
+              <svg class="user-icon" viewBox="0 0 50 50" aria-hidden="true">
+                <path d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0"/>
+              </svg>
+              <span class="auth-label">Log In</span>
+            </button>
+          </div>
+        </li>
+        <li>
+          <div class="cart-icon">
+            <svg class="shopping-bag-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="30" width="60" height="50" stroke="#A0522D" stroke-width="3" fill="none" rx="5"/>
+              <path d="M 30 30 C 30 20, 70 20, 70 30" stroke="#A0522D" stroke-width="3" fill="none"/>
+              <text x="50" y="55" text-anchor="middle" dominant-baseline="central" font-size="25" fill="#A0522D">0</text>
+            </svg>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <section id="comp-m330fw5z" tabindex="-1" class="Oqnisf wixui-section" data-block-level-container="ClassicSection">
+        <div id="bgLayers_comp-m330fw5z" data-hook="bgLayers" data-motion-part="BG_LAYER comp-m330fw5z">
+          <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+          <div id="bgMedia_comp-m330fw5z" data-motion-part="BG_MEDIA comp-m330fw5z" class="VgO9Yg"></div>
+        </div>
+        <div data-mesh-id="comp-m330fw5zinlineContent" data-testid="inline-content">
+          <div data-mesh-id="comp-m330fw5zinlineContent-gridContainer" data-testid="mesh-container-content">
+            <div id="TPAMultiSection_m330fvyr">
+              <style>
+                .heightByImageRatio::before { display: block; content: ""; }
+                .heightByImageRatio0::before { padding-top: calc(100% / (3 / 2)); }
+                .heightByImageRatio1::before { padding-top: calc(100% / (4 / 3)); }
+                .heightByImageRatio2::before { padding-top: calc(100%); }
+                .heightByImageRatio3::before { padding-top: calc(100% / (3 / 4)); }
+                .heightByImageRatio4::before { padding-top: calc(100% / (2 / 3)); }
+                .heightByImageRatio5::before { padding-top: calc(100% / (16 / 9)); }
+                .heightByImageRatio6::before { padding-top: calc(100% / (9 / 16)); }
+              </style>
+              <div>
+                <nav>
+                  <ol>
+                    <li><a href="https://www.wix.com/demone2/champplace">Home</a></li>
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path fill-rule="evenodd" d="M8.70710678,4.99810828 L15.068,11.3651083 L15.0722115,11.3620693 L15.7793183,12.0691761 L15.776,12.0721083 L15.7782433,12.0758831 L15.0711365,12.7829899 L15.069,12.7801083 L8.70710678,19.1434929 L8,18.4363861 L14.361,12.0721083 L8,5.70521506 L8.70710678,4.99810828 Z"></path></svg>
+                    <li aria-current="page">Sale</li>
+                  </ol>
+                </nav>
+                <div>
+                  <div>
+                    <img src="https://static.wixstatic.com/media/84770f_30ef44b4d697431594cd159c1ccfa0e1~mv2.jpg/v1/fill/w_940,h_304,al_c,q_80,enc_avif,quality_auto/84770f_30ef44b4d697431594cd159c1ccfa0e1~mv2.jpg" alt="" style="width: 1159px; height: 375px; object-fit: cover; object-position: 50% 50%;" fetchpriority="high">
+                  </div>
+                  <div>
+                    <h1>Sale</h1>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <div data-hook="product-list"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+                              <div class="card" style="width: 570px; height: 760px;">
+                                <img src="https://static.wixstatic.com/media/c837a6_d0c7b272c3404b03a77d639ac4bbf7c4~mv2.jpg/v1/fill/w_903,h_1205,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_d0c7b272c3404b03a77d639ac4bbf7c4~mv2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text">I'm a product <br> <s>$85.00</s> $72.25</p>
+                                </div>
+                              </div>
+                              <div class="card" style="width: 570px; height: 760px;">
+                                <img src="https://static.wixstatic.com/media/84770f_5605a3c7d853495e9f8174ade651a10e~mv2.jpg/v1/fill/w_903,h_1205,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_5605a3c7d853495e9f8174ade651a10e~mv2.jpg" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text">I'm a product <br> <s>$85.00</s> $72.25</p>
+                                </div>
+                              </div>
+                              <div class="card" style="width: 570px; height: 760px;">
+                                <img src="" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text">I'm a product <br> <s>$85.00</s> $72.25</p>
+                                </div>
+                              </div>
+  </section>
+
+
+
+  <!--Footer secton-->
+
+  <footer class="site-footer" aria-label="Main footer">
+    <div class="footer-container">
+      <!-- Brand Column -->
+      <div class="footer-section">
+        <a href="#" class="brand-logo2" aria-label="ChampPlace Home">
+          <h1 class="footer-logo">ChampPlace.</h1>
+        </a>
+      </div>
+  
+      <!-- Newsletter Section -->
+      <div class="footer-section2">
+        <h3 class="footer-heading">SUBSCRIBE</h3>
+        <p class="footer-text">Subscribe to our newsletter and be among the first <br>to hear about new arrivals and special offers.</p>
+        
+        <form class="newsletter-form" aria-label="Email subscription">
+          <label for="email" class="visually-hidden">Email</label>
+          <input type="email" id="email" name="email" required
+                 aria-required="true">
+          
+          <div class="consent-checkbox">
+            <input type="checkbox" id="newsletter-consent" required>
+            <label for="newsletter-consent">Yes, subsribe to my newsletter. *</label>
+          </div>
+          
+          <button type="submit" class="cta-button4">Submit</button>
+        </form>
+      </div>
+  
+      <!-- Contact Info -->
+      <div class="footer-section3">
+        <h3 class="footer-heading">ADDRESS</h3>
+        <address class="contact-info">
+          500 Terry Francine Street<br>
+          San Francisco, CA 94158<br>
+          <a href="tel:+918147970619">+918147970619</a><br>
+          <a href="mailto:isaacfrancis23@gmail.com">isaacfrancis23@gmail.com</a>
+        </address>
+        
+        <div class="social-links" aria-label="Social media">
+          <a href="https://github.com/wix" aria-label="GitHub" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://facebook.com/wix" aria-label="Facebook" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://instagram.com/wix" aria-label="Instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>       
+        
+      </div>
+  
+      <!-- Navigation -->
+      <nav class="footer-section2" aria-label="Footer navigation">
+        <h3 class="footer-heading">MENU</h3>
+        <ul class="footer-menu">
+          <li>Shop</li>
+          <li>Sale</li>
+          <li>Hats</li>
+          <li>Jerseys</li>
+          <li>Soccer Balls</li>
+          <li>FAQ</li>
+          <li>Terms & Conditions</li>
+          <li>Privacy Policy</li>
+          <li>Shipping Policy</li>
+          <li>Refund Policy</li>
+          <li>Cookie Policy</li>
+        </ul>
+      </nav>
+    </div>
+  
+    <div class="copyright">
+      © 2025 ChampPlace. Powered and Secured by
+      <a href="#">Zack</a>
+    </div>
+  </footer>

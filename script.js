@@ -38,6 +38,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const categoryTitle = document.querySelector('.category-title');
 
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Remove and re-add animation classes for continuous play
+        entry.target.classList.add("slideInLeft", "slideInRight", "slideIn");
+
+        // Force reflow to restart animation
+        void entry.target.offsetWidth;
+
+        // Add animations based on data attributes or class
+        if (entry.target.classList.contains("left")) {
+          entry.target.classList.add("slideInLeft");
+        } else if (entry.target.classList.contains("right")) {
+          entry.target.classList.add("slideInRight");
+        } else {
+          entry.target.classList.add("slideIn");
+        }
+      }
+    });
+  }, {
+    threshold: 0.3 // Trigger when 30% of the section is in view
+  });
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+});
+
 
 
 

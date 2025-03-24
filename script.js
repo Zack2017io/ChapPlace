@@ -1,42 +1,95 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const inputElement = document.getElementById('search-input');
-  const parentElement = document.querySelector('.input-wrapper');
-  const searchList = document.querySelector('.search-list');
+// document.addEventListener('DOMContentLoaded', function () {
+//   const inputElement = document.getElementById('search-input');
+//   const parentElement = document.querySelector('.input-wrapper');
+//   const searchList = document.querySelector('.search-list');
 
-  // Ensure all elements exist
-  if (!inputElement || !parentElement || !searchList) {
-    console.error("One or more elements not found.");
-    if (!inputElement) console.log("search-input not found");
-    if (!parentElement) console.log("input-wrapper not found");
-    if (!searchList) console.log("search-list not found");
+//   // Ensure all elements exist
+//   if (!inputElement || !parentElement || !searchList) {
+//     console.error("One or more elements not found.");
+//     if (!inputElement) console.log("search-input not found");
+//     if (!parentElement) console.log("input-wrapper not found");
+//     if (!searchList) console.log("search-list not found");
+//     return;
+//   }
+
+//   // Toggle dropdown on clicking the parent wrapper
+//   parentElement.addEventListener('click', function (event) {
+//     event.stopPropagation(); // Prevent event from reaching window.onclick
+//     searchList.classList.toggle('show');
+//     console.log("Dropdown toggled. Current state:", searchList.classList.contains('show'));
+//   });
+
+//   // Close dropdown when clicking outside
+//   document.addEventListener('click', function (event) {
+//     if (!parentElement.contains(event.target) && searchList.classList.contains('show')) {
+//       searchList.classList.remove('show');
+//       console.log("Dropdown closed.");
+//     }
+//   });
+
+//   // Prevent dropdown from closing when clicking inside search list
+//   searchList.addEventListener('click', function (event) {
+//     event.stopPropagation();
+//   });
+
+//   console.log("Dropdown script initialized successfully.");
+// });
+
+
+
+// const searchContainer = document.querySelector('.search-container');
+// const searchInput = document.querySelector('.search-input');
+
+// searchInput.addEventListener('focus', () => {
+//   searchContainer.classList.add('active');
+// });
+
+// searchInput.addEventListener('blur', () => {
+//   if (!searchContainer.matches(':hover')) {
+//     searchContainer.classList.remove('active');
+//   }
+// });
+
+// searchContainer.addEventListener('mouseleave', () => {
+//   if (!document.activeElement.matches('.search-input')) {
+//     searchContainer.classList.remove('active');
+//   }
+// });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const container = document.querySelector('.search-container');
+  if (!container) {
+    console.error('Search container not found');
     return;
   }
 
-  // Toggle dropdown on clicking the parent wrapper
-  parentElement.addEventListener('click', function (event) {
-    event.stopPropagation(); // Prevent event from reaching window.onclick
-    searchList.classList.toggle('show');
-    console.log("Dropdown toggled. Current state:", searchList.classList.contains('show'));
+  const wrapper = container.querySelector('.input-wrapper');
+  const suggestions = container.querySelector('.search-suggestions');
+  const input = container.querySelector('.search-input');
+
+  if (!wrapper || !suggestions || !input) {
+    console.error('Required elements not found');
+    return;
+  }
+
+  // Handle click inside container
+  wrapper.addEventListener('click', function() {
+    wrapper.classList.add('expanded');
+    suggestions.style.display = 'block';
+    suggestions.classList.add('show');
+    input.focus();
   });
 
-  // Close dropdown when clicking outside
-  document.addEventListener('click', function (event) {
-    if (!parentElement.contains(event.target) && searchList.classList.contains('show')) {
-      searchList.classList.remove('show');
-      console.log("Dropdown closed.");
+  // Handle click outside container
+  document.addEventListener('click', function(event) {
+    if (!container.contains(event.target)) {
+      wrapper.classList.remove('expanded');
+      suggestions.classList.remove('show');
+      suggestions.style.display = 'none';
     }
   });
-
-  // Prevent dropdown from closing when clicking inside search list
-  searchList.addEventListener('click', function (event) {
-    event.stopPropagation();
-  });
-
-  console.log("Dropdown script initialized successfully.");
 });
-//document.querySelectorAll('.card')[6].style.width = '300px'; // Third card
-
-const categoryTitle = document.querySelector('.category-title');
 
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section");

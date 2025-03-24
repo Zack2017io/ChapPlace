@@ -1,8 +1,63 @@
+#my-custom-search .search-container {
+    display: inline-flex !important;
+    align-items: center !important;
+    border: 2px solid #8f4128 !important;
+    border-radius: 25px !important;
+    padding: 3px 10px !important;
+    width: 200px !important;
+    box-sizing: border-box !important;
+    position: relative !important; /* Add relative positioning to the container */
+}
+
+#my-custom-search .search-container input {
+    border: none !important;
+    outline: none !important;
+    font-size: 16p !important;
+    color: #8f4128 !important;
+    flex-grow: 1 !important;
+    margin-left: 10px !important;
+    border-radius: 22px !important;
+    background: transparent !important; /* Make the input background transparent */
+}
+
+#my-custom-search .search-container input::placeholder {
+    color: #8f4128 !important;
+}
+
+#my-custom-search .search-container svg {
+    width: 20px !important;
+    height: 20px !important;
+    fill: #8f4128 !important;
+    position: absolute !important; /* Position the icon absolutely */
+    right: 10px !important; /* Adjust the right distance as needed */
+    top: 50% !important; /* Center the icon vertically */
+    transform: translateY(-50%) !important; /* Fine-tune vertical centering */
+}
+
+.search-container input::placeholder {
+    color: #8f4128;
+}
+
 .card {
     object-fit: cover;
     object-position: 50% 50%;
+    border: none;
+    position: relative;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #ff0000;
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
+    z-index: 100;
 }
 
 .card img {
-    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

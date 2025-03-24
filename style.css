@@ -85,8 +85,11 @@
     display: flex;
     cursor: pointer;
     flex-direction: column;
-    margin-right: 20px; 
-    position: relative; 
+    margin-right: 20px;
+}
+
+.carousel .img {
+    position: relative;
 }
 
 .card .img {
@@ -113,7 +116,7 @@
     z-index: 2;
 }
 
-/* .quick-view {
+.quick-view {
     position: absolute;
     bottom: -40px; 
     left: 0;
@@ -127,7 +130,7 @@
   
 .card:hover .quick-view {
     bottom: 0; 
-} */
+}
 
 .gallery-heading {
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -165,7 +168,7 @@
   .product-info2 {
     text-align: left;
     background: white;
-    padding: 10px;
+    padding-top: 10px;
     box-sizing: border-box; /* Include padding in width */
   }
   
